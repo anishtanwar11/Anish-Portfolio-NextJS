@@ -4,22 +4,20 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 /** @type {import('tailwindcss').Config} */
 
-const config = {
+module.exports = {
   purge: [
-    "./src/components/**/*.{tsx,ts}",
-    "./public/index.html",
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
   ],
-  darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+  darkMode: ["class"],
   prefix: "",
   theme: {
     container: {
@@ -57,8 +55,6 @@ const config = {
   },
   plugins: [addVariablesForColors],
 } satisfies Config
-
-export default config
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
 function addVariablesForColors({ addBase, theme }: any) {
