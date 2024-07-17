@@ -6,7 +6,7 @@ const {
 
 const config = {
   purge: [
-    "./src/components/**/*.{js,jsx,tsx,ts}",
+    "./src/components/**/*.{tsx,ts}",
     "./public/index.html",
   ],
   darkMode: ["class"],
