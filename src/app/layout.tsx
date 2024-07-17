@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "../components/ThemeContext"; // Adjust the path if necessary
 
-const inter = Inter({ subsets: ["latin"] });
+// Components
+import Navbar from "@/components/Navbar";
+import Profile from "@/components/Profile";
+
+const inter = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,9 +19,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        <ThemeProvider>
+          <div className="relative w-full flex items-left justify-center">
+            <Navbar />
+          </div>
+          <div className="w-full max-w-7xl mx-auto relative ">
+            <div className="w-1/4 hidden lg:block">
+              <Profile />
+            </div>
+            <div className="absolute right-0  w-full lg:w-3/4 px-4 lg:px-0 top-20 md:top-32 lg:top-0">{children}</div>
+          </div>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
