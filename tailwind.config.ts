@@ -5,6 +5,10 @@ const {
 /** @type {import('tailwindcss').Config} */
 
 const config = {
+  purge: [
+    "./src/components/**/*.{js,jsx}",
+    "./public/index.html",
+  ],
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
