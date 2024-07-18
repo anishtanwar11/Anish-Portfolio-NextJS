@@ -46,7 +46,7 @@ function ProjectDisplay() {
   }
 
   return (
-    <div className='pt-4 lg:pt-0 w-full justify-center flex'>
+    <div className='pt-4 mb-4 lg:pt-0 w-full justify-center flex'>
       <div className='w-full'>
       <div className="mb-8 flex gap-2 justify-end text-[.8rem] mg:text-[1rem] font-semibold text-gray-800 dark:text-white">
             <Link href={"/"} className="">Home</Link> 

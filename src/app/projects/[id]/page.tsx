@@ -58,7 +58,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className='mt-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center p-0 md:p-8'>
+    <div className='my-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center p-0 md:p-8'>
       <div className="flex flex-col gap-8 w-full text-right">
         <div className="flex gap-2 justify-end text-[.8rem] mg:text-[1rem] font-semibold text-gray-800 dark:text-white">
             <Link href={"/"} className="">Home</Link> 

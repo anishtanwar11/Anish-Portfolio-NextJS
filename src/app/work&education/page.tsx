@@ -13,7 +13,7 @@ import DSC from "../../assets/institutes/DyalSinghCollege.jpg";
 
 export default function WorkAndEducation() {
   return (
-    <div className="w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center">
+    <div className="mb-4 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center">
       <TracingBeam className="">
         <div className="max-w-2xl mx-auto antialiased pt-4 pl-4 lg:pl-0 relative border-b-[1px] border-opacity-20 border-slate-600/20 dark:lg:border-slate-300/20 ">
           <h1 className="text-gray-800 dark:text-white text-center text-xl md:text-3xl mb-10 font-semibold ">
@@ -123,7 +123,7 @@ const workContent = [
     duration: "Oct 2023 - Apr 2024",
     location: "Bengaluru, Karnataka, India · Remote",
     description: (
-        <ul className="list-disc ml-3">
+        <ul className="list-disc ml-3 flex flex-col gap-2">
         <li className="">
           Contributed to frontend development projects during internship
           tenure, focusing on React.js, Next.js, Node.js, Express.js, MongoDB,
@@ -159,7 +159,7 @@ const workContent = [
     duration: "Aug 2022 - Oct 2022",
     location: "Sahibzada Ajit Singh Nagar, Punjab, India · On-site",
     description: (
-      <ul className="list-disc ml-3">
+      <ul className="list-disc ml-3 flex flex-col gap-2">
         <li>
           Completed a comprehensive 45-day summer Internship program focused
           on Angular, gaining proficiency in building dynamic web applications.
