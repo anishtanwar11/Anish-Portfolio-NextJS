@@ -22,7 +22,7 @@ function Profile() {
                     <h3 className='text-center mt-3 text-xl font-semibold text-gray-800 dark:text-white'>Web Developer</h3>
                 </div>
 
-                <div className='border-b-[1px] border-slate-600/20 dark:border-slate-300/20 py-4 grid gap-2 text-[14px] text-neutral-600 dark:text-neutral-400'>
+                <div className=' grid gap-2 text-[14px] text-neutral-600 dark:text-neutral-400'>
                     <div className='flex gap-2 items-center hover:text-black dark:hover:text-white duration-200'>
                         <li className="text-xl list-none">
                             <i className="ri-map-pin-line"></i>
@@ -46,7 +46,9 @@ function Profile() {
                             thisistanwar</div></a>
                 </div>
 
-                <div className='flex justify-center text-center mt-4 pb-4 w-full border-b-[1px] border-slate-600/20 dark:border-slate-300/20 border-opacity-20'>
+                <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" />
+ 
+                <div className='flex justify-center text-center mt-4 w-full'>
                     {/* <a href='#' target='_blanck' className='flex items-center justify-center gap-2 hover:bg-transparent border-[1px] hover:border-slate-300  hover:border-opacity-20 hover:text-white duration-500 bg-white text-black text-[18px] font-[500] py-2 rounded-lg'>
                         <i className="ri-download-cloud-line"></i> Resume
                     </a> */}
@@ -61,7 +63,8 @@ function Profile() {
                 </HoverBorderGradient>
                 </div>
 
-                
+                <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" />
+ 
 
                 {/* Plateform Links */}
                 <div className='mt-5'>

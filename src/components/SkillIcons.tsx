@@ -32,8 +32,10 @@ export default function SkillIcons() {
     <div>
        <div className=" flex flex-col md:flex-row  gap-3 w-full">
         
-        <div className="border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl flex flex-col gap-5 items-center justify-center md:w-1/2 p-3 md:p-4">
+        <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl flex flex-col items-center justify-center md:w-1/2 p-3 md:p-4">
           <h1 className="font-semibold text-xl text-gray-800 dark:text-white">Frontend Skills</h1>
+          <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-2 mb-6 h-[1px] w-full" />
+ 
           <div>
             <ul className="grid grid-cols-3 gap-4 md:gap-6">
               <li className="w-24 h-24 lg:w-32 lg:h-32  rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
@@ -68,10 +70,12 @@ export default function SkillIcons() {
         </div>
 
         <div className="flex flex-col gap-4 md:w-1/2">
-          <div className="border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl  flex flex-col gap-5 items-center justify-center p-3 md:p-4">
+          <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl  flex flex-col items-center justify-center p-3 md:p-4">
             <h1 className="font-semibold text-xl text-gray-800 dark:text-white">
               Backtend Skills
             </h1>
+            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-2 mb-6 h-[1px] w-full" />
+ 
             <div>
               <ul className="grid grid-cols-3 gap-3 md:gap-6">
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
@@ -87,8 +91,10 @@ export default function SkillIcons() {
             </div>
           </div>
 
-          <div className="border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl  flex flex-col  gap-5 items-center justify-center p-3 md:p-4">
+          <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl  flex flex-col  items-center justify-center p-3 md:p-4">
             <h1 className="font-semibold text-xl text-gray-800 dark:text-white ">Tools</h1>
+            <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-2 mb-6 h-[1px] w-full" />
+ 
             <div>
               <ul className="grid grid-cols-3 gap-3 md:gap-6">
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">

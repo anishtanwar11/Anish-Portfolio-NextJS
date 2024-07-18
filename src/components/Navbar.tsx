@@ -9,6 +9,8 @@ import { useTheme } from "@/components/ThemeContext"; // Adjust the import path 
 
 import Profile from "./Profile";
 import MenuIcon from "../assets/icons/menu-4-line.svg";
+import LogoDark from '@/assets/images/logo-dark.png';
+import LogoLight from '@/assets/images/logo-light.png';
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -45,9 +47,7 @@ function Navbar({ className }: { className?: string }) {
           >
             <Image src={ProfileIconImage} alt={"Profile Icon Image"} />
           </div>
-          <h1 className="text-black dark:text-white text-xl md:text-3xl font-semibold">
-            Anish Tanwar
-          </h1>
+          <Image src={theme === "dark" ? LogoDark : LogoLight} alt={"logo image"} className="w-36  md:w-40" />
         </div>
 
         <div className="flex items-center justify-center gap-3">
@@ -118,7 +118,7 @@ function Navbar({ className }: { className?: string }) {
 
           <button
             onClick={handleThemeSwitch}
-            className="text-black dark:text-white text-xl md:border-l-[2px] md:pl-3 border-slate-600/20 dark:lg:border-slate-300/20"
+            className="mr-3 md:mr-0 text-black dark:text-white text-xl md:border-l-[2px] md:pl-3 border-slate-600/20 dark:lg:border-slate-300/20"
           >
             {theme === "dark" ? (
               <i className="ri-sun-fill"></i>
@@ -140,27 +140,27 @@ function Navbar({ className }: { className?: string }) {
         <ul className="md:hidden flex flex-col gap-3 absolute top-0 pt-24 pb-4 px-8 right-0 left-0 w-full backdrop-blur-xl dark:bg-black/30 dark:border-white/[0.2] shadow-lg z-[-1] text-black dark:text-white">
           <li>
             <Link href={"/"} onClick={() => setMenuOpen(false)}>
-              Home
+            <i className="ri-home-4-line"></i> Home
             </Link>
           </li>
           <li>
             <Link href={"/projects"} onClick={() => setMenuOpen(false)}>
-              Projects
+            <i className="ri-file-text-line"></i> Projects
             </Link>
           </li>
           <li>
             <Link href={"/skills"} onClick={() => setMenuOpen(false)}>
-              Skills
+            <i className="ri-shield-star-line"></i> Skills
             </Link>
           </li>
           <li>
             <Link href={"/work&education"} onClick={() => setMenuOpen(false)}>
-              Work/Education
+            <i className="ri-briefcase-line"></i> Work/Education
             </Link>
           </li>
           <li>
             <Link href={"/contact"} onClick={() => setMenuOpen(false)}>
-              Contact Me
+            <i className="ri-chat-3-line"></i> Contact Me
             </Link>
           </li>
         </ul>
