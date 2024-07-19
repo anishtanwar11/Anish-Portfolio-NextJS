@@ -11,6 +11,7 @@ import Profile from "./Profile";
 import MenuIcon from "../assets/icons/menu-4-line.svg";
 import LogoDark from "@/assets/images/logo-dark.png";
 import LogoLight from "@/assets/images/logo-light.png";
+import { profile } from "console";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -22,14 +23,9 @@ function Navbar({ className }: { className?: string }) {
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
-
-  function toggleMenuCloseMenu() {
-    setMenuOpen(menuOpen);
-  }
-
   // function for profile menu visibility
   function toggleProfile() {
-    setProfileOpen(!profileOpen);
+    setProfileOpen(true);
   }
 
   return (
@@ -43,8 +39,19 @@ function Navbar({ className }: { className?: string }) {
         <div className="flex gap-2 items-center justify-center">
           <div
             className="w-10 h-10 rounded-full overflow-hidden block lg:hidden cursor-pointer"
-            onClick={toggleProfile}
+           
           >
+            {profileOpen === false ? (
+              <div onClick={() => setMenuOpen(false)}>
+              <Image src={ProfileIconImage} alt={"Profile Icon Image" }  onClick={toggleProfile} /></div>
+            ) : (
+              <div
+                
+                className="text-4xl dark:text-white flex items-center justify-center cursor-pointer"
+              >
+                <i className="ri-close-circle-fill" onClick={() => setProfileOpen(false)}></i>
+              </div>
+            )}
             <Image src={ProfileIconImage} alt={"Profile Icon Image"} />
           </div>
           <Link href={"/"}>
@@ -157,28 +164,33 @@ function Navbar({ className }: { className?: string }) {
       </Menu>
 
       {menuOpen && (
-        <ul className="md:hidden flex flex-col gap-3 absolute top-0 pt-24 pb-4 px-8 right-0 left-0 w-full backdrop-blur-xl dark:bg-black/30 dark:border-white/[0.2] shadow-lg z-[-1] text-black dark:text-white">
-          <li>
+        <ul className="md:hidden flex flex-col gap-4 absolute top-0 pt-24 pb-4 px-8 right-0 left-0 w-full text-[1.1rem] backdrop-blur-xl dark:bg-black/30 dark:border-white/[0.2] shadow-lg z-[-1] text-black dark:text-white">
+          <li onClick={() => setProfileOpen(false)}>
             <Link href={"/"} onClick={() => setMenuOpen(false)}>
               <i className="ri-home-4-line"></i> Home
             </Link>
           </li>
-          <li>
+          <li onClick={() => setProfileOpen(true)}>
+            <Link href={""} onClick={() => setMenuOpen(false)}>
+            <i className="ri-user-line"></i> Profile
+            </Link>
+          </li>
+          <li onClick={() => setProfileOpen(false)}>
             <Link href={"/projects"} onClick={() => setMenuOpen(false)}>
               <i className="ri-file-text-line"></i> Projects
             </Link>
           </li>
-          <li>
+          <li onClick={() => setProfileOpen(false)}>
             <Link href={"/skills"} onClick={() => setMenuOpen(false)}>
               <i className="ri-shield-star-line"></i> Skills
             </Link>
           </li>
-          <li>
+          <li onClick={() => setProfileOpen(false)}>
             <Link href={"/work&education"} onClick={() => setMenuOpen(false)}>
               <i className="ri-briefcase-line"></i> Work/Education
             </Link>
           </li>
-          <li>
+          <li onClick={() => setProfileOpen(false)}>
             <Link href={"/contact"} onClick={() => setMenuOpen(false)}>
               <i className="ri-chat-3-line"></i> Contact Me
             </Link>
@@ -188,7 +200,7 @@ function Navbar({ className }: { className?: string }) {
 
       {profileOpen && (
         <div className="flex w-full h-[100vh] overflow-scroll backdrop-blur-xl dark:bg-black/30 dark:border-white/[0.2] lg:hidden absolute top-0 left-0 right-0 z-[-2]">
-          <div className="h-full mt-20 mb-16 w-full flex items-center justify-center lg:hidden">
+          <div className="h-full mt-3 mb-8 w-full flex items-center justify-center lg:hidden">
             <Profile />
           </div>
         </div>

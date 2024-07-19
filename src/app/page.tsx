@@ -9,14 +9,25 @@ export default function Home() {
         <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
           ABOUT
         </h1>
-        <p className="font-xl text-justify text-neutral-600 dark:text-neutral-400">
+        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
+          I’m an MERN Stack and NextJS Developer. I create beautiful and usable
+          interfaces, for desktop and mobile applications.
+        </p>
+
+        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
+          I&apos;ve hands-on experience from internships at Primewise Consulting
+          and Solitaire Infosys. My expertise spans both frontend and backend
+          development, allowing me to build comprehensive solutions from the
+          ground up.
+        </p>
+        {/* <p className="font-xl text-justify text-neutral-600 dark:text-neutral-400">
           I&apos;m Anish Tanwar, an enthusiastic web developer driven by the
           incredible potential of web development to foster connections and
           drive innovation. As a newcomer in this dynamic field, my unwavering
           commitment lies in creating user-friendly websites and continuously
           evolving my skills. Let&apos;s join forces and embark on a journey to
           unlock the boundless opportunities of the web together!
-        </p>
+        </p> */}
       </div>
 
       <div className="flex flex-col md:flex-row gap-4 w-full">
@@ -46,9 +57,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full hidden md:flex flex-col gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
-
-        </div>
+        <div className="w-full hidden md:flex flex-col gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]"></div>
       </div>
 
       <div className="flex flex-col-reverse md:flex-row gap-4 w-full">

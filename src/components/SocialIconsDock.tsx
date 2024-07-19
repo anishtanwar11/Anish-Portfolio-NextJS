@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
+import Link from "next/link";
 
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { MailIcon } from "lucide-react";
-import angularIcon from "@/assets/frontend/angular.png";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -12,31 +11,44 @@ export default function SocialIconDock() {
     <div className="relative ">
       <Dock direction="middle">
         <DockIcon className="relative group">
-          <Icons.LinkedIn className="size-6 dark:text-white" />
+          <Link href="https://www.linkedin.com/in/thisisanishtanwar/" target="_blank">
+            <Icons.LinkedIn className="size-6 dark:text-white" />
+          </Link>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
-            LinkedIn 
+            LinkedIn
           </span>
         </DockIcon>
         <DockIcon className="relative group">
-          <Icons.gitHub className="size-6 dark:text-white" />
+          <Link href="https://github.com/anishtanwar11" target="_blank">
+            <Icons.gitHub className="size-6 dark:text-white" />
+          </Link>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
-          Github
+            Github
           </span>
         </DockIcon>
         <DockIcon className="relative group">
-          <Icons.Twitter className="size-6 dark:text-white" />
+          <Link href="https://twitter.com/thisistanwar" target="_blank">
+            <Icons.Twitter className="size-6 dark:text-white" />
+          </Link>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
             X
           </span>
         </DockIcon>
         <DockIcon className="relative group">
+          <Link href="mailto:tanwaranish333@gmail.com" target="_blank">
           <Icons.Email className="size-6 dark:text-white" />
+          </Link>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
             Email
           </span>
         </DockIcon>
         <DockIcon className="relative group">
-          <Icons.InstaSram className="size-6 dark:text-white cursor-pointer" />
+          <Link
+            href="https://www.instagram.com/frontend_studios/"
+            target="_blank"
+          >
+            <Icons.InstaSram className="size-6 dark:text-white cursor-pointer" />
+          </Link>
           <span className="absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
             Instagram
           </span>

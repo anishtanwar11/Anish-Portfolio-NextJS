@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import NumberTicker from "./magicui/number-ticker";
 
 export default function LeetCodeCard() {
   const [stats, setStats] = useState({
@@ -61,7 +62,7 @@ export default function LeetCodeCard() {
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-28 h-28 md:w-36 md:h-36 bg-white dark:bg-black rounded-full flex flex-col items-center justify-center">
-                <div className="text-gray-800 dark:text-white text-2xl">{totalSolved}</div>
+                <NumberTicker value={totalSolved} className="text-gray-800 dark:text-white text-4xl" />
                 <div className="text-green-400 text-lg">Solved</div>
               </div>
             </div>

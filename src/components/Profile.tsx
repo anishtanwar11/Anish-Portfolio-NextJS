@@ -8,6 +8,7 @@ import ProfileImg from "../assets/images/farewalle3.jpg";
 import LeetCode from "../assets/images/leetcode.svg";
 import Github from "../assets/images/github.svg";
 import GithubLight from "@/assets/frontend/github-light.svg";
+import WordRotate from "./magicui/word-rotate";
 
 import "remixicon/fonts/remixicon.css";
 
@@ -17,15 +18,21 @@ function Profile() {
   return (
     <div className="w-full justify-center  lg:pr-4">
       <div className="lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20   p-4 rounded-[15px]">
-        <div className="flex-none w-40 h-40 mb-10 mx-auto">
-          <Image
-            className=" inset-0 w-full h-full object-cover rounded-[50%]"
-            src={ProfileImg}
-            alt="Profile Image"
-          />
-          <h3 className="text-center mt-3 text-xl font-semibold text-gray-800 dark:text-white">
-            Web Developer
-          </h3>
+        <div className="mb-10 ">
+          <div className="flex-none w-40 h-40 mx-auto ">
+            <Image
+              className=" inset-0 w-full h-full object-cover rounded-[50%]"
+              src={ProfileImg}
+              alt="Profile Image"
+            />
+          </div>
+          <div className="mt-1 text-xl font-semibold text-gray-800 dark:text-white flex  items-center justify-center gap-2">
+            <WordRotate
+              className="text-xl font-bold text-black dark:text-white"
+              words={["Web","Frontend", "Backend" ]}
+            />
+            <p>Developer</p>
+          </div>
         </div>
 
         <div className=" grid gap-2 text-[14px] text-neutral-600 dark:text-neutral-400">
@@ -63,14 +70,14 @@ function Profile() {
 
         <div className="flex justify-center text-center mt-4 w-full">
           <a href="/Anish_Tanwar-Resume-2024.pdf" download>
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="border-none dark:bg-black bg-white text-black dark:text-white flex items-center justify-center space-x-2"
-          >
-            <i className="ri-download-cloud-line"></i>
-            <span>Resume</span>
-          </HoverBorderGradient>
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="border-none dark:bg-black bg-white text-black dark:text-white flex items-center justify-center space-x-2"
+            >
+              <i className="ri-download-cloud-line"></i>
+              <span>Resume</span>
+            </HoverBorderGradient>
           </a>
         </div>
 

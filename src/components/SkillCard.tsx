@@ -7,7 +7,7 @@ export default function SkillCard() {
   return (
     <Card>
       <CardDescription>I constantly try to improve</CardDescription>
-      <CardTitle>My tech stck</CardTitle>
+      <CardTitle>My tech stack</CardTitle>
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
