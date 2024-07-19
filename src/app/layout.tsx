@@ -6,6 +6,7 @@ import { ThemeProvider } from "../components/ThemeContext"; // Adjust the path i
 // Components
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
+import Footer from "@/components/Footer";
 
 const inter = Josefin_Sans({ subsets: ["latin"] });
 
@@ -19,7 +20,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
@@ -27,11 +27,18 @@ export default function RootLayout({
           <div className="relative w-full flex items-left justify-center">
             <Navbar />
           </div>
-          <div className="w-full max-w-7xl mx-auto relative ">
-            <div className="w-1/4 hidden lg:block">
-              <Profile />
+          <div className="w-full max-w-7xl mx-auto relative mt-24">
+            <div className="flex">
+              <div className="w-1/4 hidden lg:block">
+                <Profile />
+              </div>
+              <div className="right-0  w-full lg:w-3/4 px-4 lg:px-0 top-20 md:top-32 lg:top-0">
+                {children}
+              </div>
             </div>
-            <div className="absolute right-0  w-full lg:w-3/4 px-4 lg:px-0 top-20 md:top-32 lg:top-0">{children}</div>
+            <div>
+              <Footer />
+            </div>
           </div>
         </ThemeProvider>
       </body>

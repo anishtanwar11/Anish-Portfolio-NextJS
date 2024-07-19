@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mb-4 flex flex-col items-center justify-center lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 p-4  lg:px-8 lg:py-16 rounded-[15px]">
+      <div className="mb-4 flex flex-col items-center justify-center lg:border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4  lg:px-8 lg:py-16 rounded-[15px]">
         <h1 className="mb-4 text-xl text-center md:text-3xl font-semibold text-gray-800 dark:text-white">
           Ready to take your digital presence to the next level?
         </h1>

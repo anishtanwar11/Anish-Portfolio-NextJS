@@ -40,11 +40,17 @@ export default function WorkAndEducation() {
                 </div>
 
                 <div className="flex gap-3 text-xl">
-                  <a href={item.webLink} title="Visit Website" target="_blank" className="text-gray-800 dark:text-white hover:text-white duration-200" rel="noreferrer">
+                  <a href={item.webLink} target="_blank" className="relative group text-gray-800 dark:text-white  duration-200" rel="noreferrer">
                     <i className="ri-global-line"></i>
+                    <span className="mb-3 w-28 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
+                    Visit Website
+                  </span>
                   </a>
-                  <a href={item.linkedInLinks} title="Visit LinkedIn" target="_blank" className="text-gray-800 dark:text-white hover:text-white duration-200" rel="noreferrer">
+                  <a href={item.linkedInLinks} target="_blank" className="relative group text-gray-800 dark:text-white  duration-200" rel="noreferrer">
                     <i className="ri-linkedin-box-line"></i>
+                    <span className="mb-3 w-28 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
+                    Visit LinkedIn
+                  </span>
                   </a>
                 </div>
               </div>
