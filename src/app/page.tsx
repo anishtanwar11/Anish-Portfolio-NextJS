@@ -1,5 +1,6 @@
 import SkillCard from "@/components/SkillCard";
 import LeetCodeCard from "@/components/LeetCodeCard";
+import SocialIconDock from "@/components/SocialIconsDock";
 import Link from "next/link";
 
 export default function Home() {
@@ -57,7 +58,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full hidden md:flex flex-col gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]"></div>
+        <div className="w-full hidden md:flex flex-col items-center justify-center gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
+          <SocialIconDock />
+        </div>
       </div>
 
       <div className="flex flex-col-reverse md:flex-row gap-4 w-full">
