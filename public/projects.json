@@ -1,0 +1,110 @@
+[
+    {
+        "_id": "661662367b819c0e705487ff",
+        "name": "on.time",
+        "description": "Introducing on.time, the ultimate Note App designed to enhance productivity on the go. With a focus on simplicity and efficiency, on.time offers essential features like adding and deleting tasks with ease. Crafted using Angular, Typescript, HTML, and CSS, it ensures a seamless user experience across all devices. Whether you're managing your daily agenda or jotting down quick notes, on.time's fully responsive design ensures a consistent experience on desktops, tablets, and smartphones. Stay organized and on top of your tasks with on.time, your go-to companion for productivity.",
+        "techStack": [
+            {
+                "path": "/assets/frontend/file-type-angular.svg",
+                "name": "Angular"
+            },
+            {
+                "path": "/assets/frontend/typescript.svg",
+                "name": "TypeScript"
+            },
+            {
+                "path": "/assets/frontend/html.svg",
+                "name": "HTML"
+            },
+            {
+                "path": "/assets/frontend/css.svg",
+                "name": "CSS"
+            }
+        ],
+        "category": "angular",
+        "liveLink": "https://ontime-anish.netlify.app/",
+        "sourceCodeLink": "https://github.com/anishtanwar11/note-app",
+        "imageUrl": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png",
+        "__v": 0
+    },
+    {
+        "_id": "66165d417b819c0e70548798",
+        "name": "Noise Clone",
+        "description": "I'm thrilled to introduce my latest project, a meticulous recreation of Gonoise utilizing a robust tech stack. Leveraging Angular, Typescript, HTML, and CSS, this endeavor embodies cutting-edge technology. Angular's extensive features including Angular Directives, Data Binding, Pipes, Services, Routing, NgRx, and Observables contribute to its seamless functionality. The platform boasts a diverse array of product categories and a catalog, ensuring an intuitive shopping experience. With powerful filtering options and a responsive search bar, users can effortlessly find desired items. The inclusion of a fully functional shopping cart simplifies product management. Moreover, the design is fully responsive, guaranteeing a consistent and user-friendly experience across all devices.",
+        "techStack": [
+            {
+                "path": "/assets/frontend/file-type-angular.svg",
+                "name": "Angular"
+            },
+            {
+                "path": "/assets/frontend/typescript.svg",
+                "name": "TypeScript"
+            },
+            {
+                "path": "/assets/frontend/html.svg",
+                "name": "HTML"
+            },
+            {
+                "path": "/assets/frontend/css.svg",
+                "name": "CSS"
+            },
+            {
+                "path": "/assets/frontend/bootstrap.svg",
+                "name": "Bootstrap"
+            }
+        ],
+        "category": "angular",
+        "liveLink": "https://gonoise-clone.netlify.app/",
+        "sourceCodeLink": "https://github.com/anishtanwar11/noise-clone",
+        "imageUrl": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712741696/hpkvxznguxfwe3hxm4r3.png",
+        "__v": 0
+    },
+    {
+        "_id": "6614d37c1cf89de04fae8fbc",
+        "name": "Nobi's 24",
+        "description": "Introducing Nobi's 24, your premier destination for culinary excellence in the digital realm. With our restaurant app, powered by a blend of cutting-edge technologies including HTML, CSS, JavaScript, and intuitive user interface design, we redefine the dining experience. Explore our diverse menu, seamlessly place orders, and indulge in a feast for the senses, all from the comfort of your device. Nobi's 24 app is where convenience meets gastronomic delight, ensuring every dining experience is nothing short of extraordinary.",
+        "techStack": [
+            {
+                "path": "/assets/frontend/html.svg",
+                "name": "HTML"
+            },
+            {
+                "path": "/assets/frontend/css.svg",
+                "name": "CSS"
+            },
+            {
+                "path": "/assets/frontend/javascript.svg",
+                "name": "Javascript"
+            }
+        ],
+        "category": "website",
+        "liveLink": "https://nobis24.netlify.app/",
+        "sourceCodeLink": "https://github.com/anishtanwar11/Nobi24",
+        "imageUrl": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712640891/lkioegru5xcs2npcyfj3.png",
+        "__v": 0
+    },
+    {
+        "_id": "6614cec91cf89de04fae8fb5",
+        "name": "Portfolio Website",
+        "description": "Welcome to my dynamic portfolio website, where creativity meets functionality. With a fusion of HTML, CSS, JavaScript, and GSAP animation, I've crafted an immersive digital experience that showcases my skills and accomplishments in a captivating manner. Navigate seamlessly through my projects, each brought to life with stunning animations and intuitive design. From sleek transitions to interactive elements, my website is a testament to my dedication to innovation and excellence in web development.\r\n\r\nKey Points:\r\n1. Seamless navigation through projects.\r\n2. Stunning animations and transitions.\r\n3. Intuitive design for an engaging user experience.\r\n4. Demonstrates expertise in HTML, CSS, JavaScript, and GSAP.\r\n5. Reflects dedication to innovation and excellence in web development.",
+        "techStack": [
+            {
+                "path": "/assets/frontend/html.svg",
+                "name": "HTML"
+            },
+            {
+                "path": "/assets/frontend/css.svg",
+                "name": "CSS"
+            },
+            {
+                "path": "/assets/frontend/javascript.svg",
+                "name": "Javascript"
+            }
+        ],
+        "category": "js",
+        "liveLink": "https://anishtanwar.netlify.app/",
+        "sourceCodeLink": "https://github.com/anishtanwar11/anishtanwar",
+        "imageUrl": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712639688/exf2lqjynk4q6upgzk0l.png",
+        "__v": 0
+    }
+]

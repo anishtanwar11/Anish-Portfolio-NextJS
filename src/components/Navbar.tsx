@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,10 +8,9 @@ import ProfileIconImage from "../assets/images/farewalle3.jpg";
 import { useTheme } from "@/components/ThemeContext"; // Adjust the import path as necessary
 
 import Profile from "./Profile";
-import MenuIcon from "../assets/icons/menu-4-line.svg";
 import LogoDark from "@/assets/images/logo-dark.png";
 import LogoLight from "@/assets/images/logo-light.png";
-import { profile } from "console";
+import { BorderBeam } from "./magicui/border-beam";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -38,12 +37,14 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <div className="flex gap-2 items-center justify-center">
           <div
-            className="w-10 h-10 rounded-full overflow-hidden block lg:hidden cursor-pointer"
+            className="w-11 h-11  rounded-full overflow-hidden block lg:hidden cursor-pointer relative "
            
           >
+           <BorderBeam size={50} duration={5} delay={9} />
             {profileOpen === false ? (
               <div onClick={() => setMenuOpen(false)}>
-              <Image src={ProfileIconImage} alt={"Profile Icon Image" }  onClick={toggleProfile} /></div>
+              <Image src={ProfileIconImage} alt={"Profile Icon Image" }onClick={toggleProfile} />
+              </div>
             ) : (
               <div
                 
@@ -52,7 +53,7 @@ function Navbar({ className }: { className?: string }) {
                 <i className="ri-close-circle-fill" onClick={() => setProfileOpen(false)}></i>
               </div>
             )}
-            <Image src={ProfileIconImage} alt={"Profile Icon Image"} />
+          
           </div>
           <Link href={"/"}>
             <Image

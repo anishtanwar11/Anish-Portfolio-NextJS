@@ -22,7 +22,7 @@ function ProjectDisplay() {
 
     async function fetchProjects() {
       try {
-        const response = await axios.get('https://project-catalouge-backend.vercel.app/project');
+        const response = await axios.get('/projects.json');
         const formattedProjects = response.data.map((project: Project) => ({
           ...project,
           imageUrl: project.imageUrl.replace(/\\/g, '/'), // Convert backslashes to forward slashes

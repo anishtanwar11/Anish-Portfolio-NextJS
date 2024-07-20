@@ -7,31 +7,37 @@ import Image from "next/image";
 import Link from "next/link";
 import Loading from "@/components/Loading";
 
+interface TechStackItem {
+  path: string;
+  name: string;
+}
+
 interface Project {
   _id: string;
   name: string;
   description: string;
   imageUrl: string;
-  category: string;
-  techStack: string;
+  techStack: TechStackItem[];
   liveLink: string;
   sourceCodeLink: string;
 }
 
 const ProjectDetails = () => {
   const params = useParams();
-  const userId = params.id as string; // Assuming `id` is the parameter name
+  const projectId = params.id as string; // Assuming `id` is the parameter name
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    if (userId) {
+    if (projectId) {
       const fetchProjectDetails = async () => {
         try {
-          const response = await axios.get(
-            `https://project-catalouge-backend.vercel.app/project/${userId}`
+          const response = await axios.get("/projects.json"); // Fetch from the local JSON file in the public folder
+          const projects: Project[] = response.data;
+          const foundProject = projects.find(
+            (project) => project._id === projectId
           );
-          setProject(response.data);
+          setProject(foundProject || null);
         } catch (error) {
           console.error("Error fetching project details:", error);
         } finally {
@@ -41,9 +47,9 @@ const ProjectDetails = () => {
 
       fetchProjectDetails();
     } else {
-      setLoading(false); // If no userId, stop loading
+      setLoading(false); // If no projectId, stop loading
     }
-  }, [userId]);
+  }, [projectId]);
 
   if (loading) {
     return (
@@ -58,51 +64,54 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className='my-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center p-0 md:p-8'>
+    <div className="my-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center p-0 md:p-8">
       <div className="flex flex-col gap-8 w-full text-right">
         <div className="flex gap-2 justify-end text-[.8rem] mg:text-[1rem] font-semibold text-gray-800 dark:text-white">
-            <Link href={"/"} className="">Home</Link> 
-            {"/"} 
-            <Link href={"/projects"}>Projects</Link> 
-            {"/"} &nbsp;
-            {project.name}
+          <Link href={"/"} className="">
+            Home
+          </Link>
+          {"/"}
+          <Link href={"/projects"}>Projects</Link>
+          {"/"} &nbsp;
+          {project.name}
         </div>
-        <div className="flex  rounded-xl overflow-hidden justify-center items-center border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] ">
-          <Image
-            src={project.imageUrl}
-            alt="Project Image"
-            width={1000}
-            height={400}
-            className="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
-          />
-        </div>
-        <div className=" flex flex-col gap-4">
+        <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
             <div className="flex gap-2">
-              <h2 className="text-[1rem] md:text-2xl uppercase tracking-wider font-semibold text-gray-800 dark:text-white ">
+              <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-wider  text-gray-800 dark:text-white ">
                 {project.name}
               </h2>
               <div className="text-[#f59e0b]">
                 <i className="ri-star-s-fill"></i>
               </div>
             </div>
-            <p className="border-[1px] text-[15px] lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-[20px]  py-1 md:py-2 px-4 md:px-8 text-gray-800 dark:text-white ">
-              {project.category}
-            </p>
           </div>
           <div>
             <p className="text-[15px] flex justify-start font-semibold text-gray-800 dark:text-white">
-              Technologies
+              Built with the latest tech stack
             </p>
-            <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400  md:text-sm md:font-normal text-justify mt-2">
-              {project.techStack}
-            </p>
+            <div className="flex flex-wrap gap-4 mt-2">
+              {project.techStack.map((tech, index) => (
+                <div key={index} className="relative group"
+                >
+                  <Image
+                    src={tech.path}
+                    alt="Technology Icon"
+                    width={30}
+                    height={30}
+                  />
+                  <span className="mb-2 shadow-xl absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
+                    {tech.name}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
           <div>
             <p className="text-[15px] flex justify-start font-semibold text-gray-800 dark:text-white">
               Description
             </p>
-            <p className="text-left text-sm font-normal text-neutral-600 dark:text-neutral-400  md:text-sm md:font-normal mt-2">
+            <p className="text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal mt-2">
               {project.description}
             </p>
           </div>
@@ -118,7 +127,7 @@ const ProjectDetails = () => {
                         focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-1 focus:ring-offset-slate-50"
               rel="noreferrer"
             >
-              <i className="ri-links-line mb-1 text-xl"></i> Live Link
+              <i className="ri-links-line mb-1 text-xl"></i> Live Preview
             </Link>
             <Link
               href={project.sourceCodeLink}
@@ -134,6 +143,15 @@ const ProjectDetails = () => {
               <i className="ri-github-fill mb-1 text-xl"></i> Source Code
             </Link>
           </div>
+        </div>
+        <div className="flex rounded-xl overflow-hidden justify-center items-center border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] ">
+          <Image
+            src={project.imageUrl}
+            alt="Project Image"
+            width={1000}
+            height={400}
+            className="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+          />
         </div>
       </div>
     </div>

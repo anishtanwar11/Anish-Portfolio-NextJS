@@ -28,7 +28,7 @@ function Profile() {
           </div>
           <div className="mt-1 text-xl font-semibold text-gray-800 dark:text-white flex  items-center justify-center gap-2">
             <WordRotate
-              className="text-xl font-bold text-black dark:text-white"
+              className="text-xl font-semibold text-gray-800 dark:text-white"
               words={["Web","Frontend", "Backend" ]}
             />
             <p>Developer</p>

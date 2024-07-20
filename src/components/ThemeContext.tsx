@@ -20,20 +20,16 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      const storedTheme = localStorage.getItem("theme");
-      if (storedTheme) {
-        return storedTheme;
-      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
-      } else {
-        return "light";
-      }
-    } else {
-      return "light";
+  const [theme, setTheme] = useState<string>("light");
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark");
     }
-  });
+  }, []);
 
   useEffect(() => {
     if (theme === "dark") {

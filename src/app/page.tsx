@@ -69,7 +69,7 @@ export default function Home() {
         </div>
         <div className="w-full flex flex-col gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
           <h1 className="text-lg text-center font-semibold text-gray-800 dark:text-white">
-            LeetCode Solved Questions
+            LeetCode Solved Questions (DSA)
           </h1>
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent  h-[2px] w-full" />
 
