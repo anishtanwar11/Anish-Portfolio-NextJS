@@ -2,7 +2,6 @@
 // /app/projects/page.tsx
 import Link from 'next/link';
 import Image from 'next/image';
-import { WobbleCard } from '@/components/ui/wobble-card';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Loading from '@/components/Loading';
@@ -11,7 +10,7 @@ interface Project {
   _id: string;
   name: string;
   description: string;
-  imageUrl: string;
+  coverImg: string;
 }
 
 function ProjectDisplay() {
@@ -25,7 +24,7 @@ function ProjectDisplay() {
         const response = await axios.get('/projects.json');
         const formattedProjects = response.data.map((project: Project) => ({
           ...project,
-          imageUrl: project.imageUrl.replace(/\\/g, '/'), // Convert backslashes to forward slashes
+          imageUrl: project.coverImg.replace(/\\/g, '/'), // Convert backslashes to forward slashes
         }));
         setProjects(formattedProjects);
       } catch (error) {
@@ -59,7 +58,7 @@ function ProjectDisplay() {
               <Link href={`/projects/[id]`} as={`/projects/${project._id}`} passHref>
                 <div className='rounded-xl overflow-hidden h-[200px] sm:h-[280px] md:h-[200px] object-cover flex items-center justify-center'>
                   <Image
-                    src={project.imageUrl}
+                    src={project.coverImg}
                     alt="Project Image"
                     width={500}
                     height={280}

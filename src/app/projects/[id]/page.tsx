@@ -16,7 +16,7 @@ interface Project {
   _id: string;
   name: string;
   description: string;
-  imageUrl: string;
+  imageUrl: string[];
   techStack: TechStackItem[];
   liveLink: string;
   sourceCodeLink: string;
@@ -92,8 +92,7 @@ const ProjectDetails = () => {
             </p>
             <div className="flex flex-wrap gap-4 mt-2">
               {project.techStack.map((tech, index) => (
-                <div key={index} className="relative group"
-                >
+                <div key={index} className="relative group">
                   <Image
                     src={tech.path}
                     alt="Technology Icon"
@@ -144,14 +143,18 @@ const ProjectDetails = () => {
             </Link>
           </div>
         </div>
-        <div className="flex rounded-xl overflow-hidden justify-center items-center border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] ">
-          <Image
-            src={project.imageUrl}
-            alt="Project Image"
-            width={1000}
-            height={400}
-            className="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
-          />
+        <div className="grid md:grid-cols-2 gap-5">
+          {project.imageUrl.map((path,index ) => (
+            <div key={index} className="flex rounded-[5px] overflow-hidden justify-center items-center border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
+              <Image
+                src={path}
+                alt="Project Image"
+                width={1000}
+                height={400}
+                className="shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
