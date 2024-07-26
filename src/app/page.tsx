@@ -35,26 +35,26 @@ export default function Home() {
         <div className="flex flex-row gap-4 w-full md:w-1/2 ">
           <div className="w-full flex flex-col gap-4 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
             <i className="ri-award-line text-black dark:text-white text-2xl"></i>
-            <div>
+            <Link href={"/work&education"}>
               <p className="text-lg font-semibold text-gray-800 dark:text-white">
-                Exprience
+                Experience
               </p>
               <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
                 8 Months
               </p>
-            </div>
+            </Link>
           </div>
 
           <div className="w-full flex flex-col gap-4 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
             <i className="ri-briefcase-line text-black dark:text-white text-2xl"></i>
-            <div>
+            <Link href={"/projects"}>
               <p className="text-lg font-semibold text-gray-800 dark:text-white">
                 Completed
               </p>
               <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
                 6+ Projects
               </p>
-            </div>
+            </Link>
           </div>
         </div>
 
