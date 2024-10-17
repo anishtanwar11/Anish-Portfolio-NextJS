@@ -1,0 +1,20 @@
+.grid-areas-layout {
+    display: grid;
+    grid-template-areas:
+      "frontend backend"
+      "frontend tools";
+    gap: 1rem;
+  }
+  
+  .frontend-area {
+    grid-area: frontend;
+  }
+  
+  .backend-area {
+    grid-area: backend;
+  }
+  
+  .tools-area {
+    grid-area: tools;
+  }
+  

@@ -5,11 +5,10 @@ import { TracingBeam } from "../../components/ui/tracing-beam";
 
 import Image from "next/image";
 
-import PrimeWise from '../../assets/certificates/Primewise.jpg';
-import Solitare from '../../assets/certificates/Solitare.jpg';
+import PrimeWise from "../../assets/certificates/Primewise.jpg";
+import Solitare from "../../assets/certificates/Solitare.jpg";
 import Kuk from "../../assets/institutes/kuk_logo-e1668590054813.png";
 import DSC from "../../assets/institutes/DyalSinghCollege.jpg";
-
 
 export default function WorkAndEducation() {
   return (
@@ -36,41 +35,68 @@ export default function WorkAndEducation() {
                       className="rounded-lg  object-cover"
                     />
                   )}
-                  <p className={twMerge(" md:text-xl text-gray-800 dark:text-white")}>{item.title}</p>
+                  <p
+                    className={twMerge(
+                      " md:text-xl text-gray-800 dark:text-white"
+                    )}
+                  >
+                    {item.title}
+                  </p>
                 </div>
 
                 <div className="flex gap-3 text-xl">
-                  <a href={item.webLink} target="_blank" className="relative group text-gray-800 dark:text-white  duration-200" rel="noreferrer">
+                  <a
+                    href={item.webLink}
+                    target="_blank"
+                    className="relative group text-gray-800 dark:text-white  duration-200"
+                    rel="noreferrer"
+                  >
                     <i className="ri-global-line"></i>
                     <span className="mb-3 w-28 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
-                    Visit Website
-                  </span>
+                      Visit Website
+                    </span>
                   </a>
-                  <a href={item.linkedInLinks} target="_blank" className="relative group text-gray-800 dark:text-white  duration-200" rel="noreferrer">
+                  <a
+                    href={item.linkedInLinks}
+                    target="_blank"
+                    className="relative group text-gray-800 dark:text-white  duration-200"
+                    rel="noreferrer"
+                  >
                     <i className="ri-linkedin-box-line"></i>
                     <span className="mb-3 w-28 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
-                    Visit LinkedIn
-                  </span>
+                      Visit LinkedIn
+                    </span>
                   </a>
                 </div>
               </div>
 
-              <p className={twMerge("text-[13px] mb-1 text-gray-800 dark:text-white")}>{item.duration}</p>
-              <p className={twMerge("text-[13px] mb-4 text-gray-800 dark:text-white")}>{item.location}</p>
+              <p
+                className={twMerge(
+                  "text-[13px] mb-1 text-gray-800 dark:text-white"
+                )}
+              >
+                {item.duration}
+              </p>
+              <p
+                className={twMerge(
+                  "text-[13px] mb-4 text-gray-800 dark:text-white"
+                )}
+              >
+                {item.location}
+              </p>
 
               <div className="text-sm font-normal text-neutral-600 dark:text-neutral-400  md:text-sm md:font-normal prose prose-sm dark:prose-invert">
-              {item.description}
-              {item?.certificateImage && (
-                <Image
-                  src={item.certificateImage}
-                  alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mt-4 md:mt-10 object-cover"
-                />
-              )}
-            </div>
-
+                {item.description}
+                {item?.certificateImage && (
+                  <Image
+                    src={item.certificateImage}
+                    alt="blog thumbnail"
+                    height="1000"
+                    width="1000"
+                    className="rounded-lg mt-4 md:mt-10 object-cover"
+                  />
+                )}
+              </div>
             </div>
           ))}
         </div>
@@ -104,13 +130,41 @@ export default function WorkAndEducation() {
                     className="rounded-lg object-cover"
                   />
                 )}
-                <p className={twMerge(" md:text-xl text-gray-800 dark:text-white")}>{item.title}</p>
+                <p
+                  className={twMerge(
+                    " md:text-xl text-gray-800 dark:text-white"
+                  )}
+                >
+                  {item.title}
+                </p>
               </div>
 
-              <p className={twMerge("text-[15px] md:text-[17px] mb-1 text-gray-800 dark:text-white")}>{item.field}</p>
-              <p className={twMerge("text-[13px] mb-1 text-gray-800 dark:text-white")}>{item.duration}</p>
-              <p className={twMerge("text-[13px] mb-2 text-gray-800 dark:text-white")}>{item.location}</p>
-              <h2 className={twMerge("text-[15px] mb-2 text-gray-800 dark:text-white")}>
+              <p
+                className={twMerge(
+                  "text-[15px] md:text-[17px] mb-1 text-gray-800 dark:text-white"
+                )}
+              >
+                {item.field}
+              </p>
+              <p
+                className={twMerge(
+                  "text-[13px] mb-1 text-gray-800 dark:text-white"
+                )}
+              >
+                {item.duration}
+              </p>
+              <p
+                className={twMerge(
+                  "text-[13px] mb-2 text-gray-800 dark:text-white"
+                )}
+              >
+                {item.location}
+              </p>
+              <h2
+                className={twMerge(
+                  "text-[15px] mb-2 text-gray-800 dark:text-white"
+                )}
+              >
                 Grade: {item.grade}
               </h2>
             </div>
@@ -129,27 +183,28 @@ const workContent = [
     duration: "Oct 2023 - Apr 2024",
     location: "Bengaluru, Karnataka, India · Remote",
     description: (
-        <ul className="list-disc ml-3 flex flex-col gap-2">
+      <ul className="list-disc ml-3 flex flex-col gap-2">
         <li className="">
-          Contributed to frontend development projects during internship
-          tenure, focusing on React.js, Next.js, Node.js, Express.js, MongoDB,
-          Rest API’s, HTML, and Tailwind CSS.
+          Developed and maintained web applications using React.js, Next.js for
+          server-side rendering, and Node.js/Express.js for backend services,
+          ensuring high performance and scalability.
         </li>
         <li>
-          Assisted in the development and maintenance of web applications
-          using React.js, Next.js for server-side rendering and
-          Node.js/Express.js for backend functionality, ensuring robust
-          performance and scalability.
+          Enhanced user experience by implementing responsive designs using HTML
+          and Tailwind CSS, optimizing interfaces for various devices and
+          improving load times by 20%.
         </li>
         <li>
-          Collaborated with design and development teams to implement
-          responsive HTML and Tailwind CSS, enhancing the user interface and
-          optimizing user experience across various devices.
+          Collaborated with cross-functional teams to deliver features on
+          schedule, adhering to agile development principles.
         </li>
         <li>
-          Utilized Git for version control and GitHub for collaborative
-          development, actively participating in code reviews and ensuring
-          adherence to project requirements and time lines.
+          Actively participated in code reviews, ensuring code quality and
+          adherence to project requirements and timelines.
+        </li>
+        <li>
+          Utilized Git and GitHub for version control and team collaboration,
+          contributing to over 100 pull requests across multiple projects.
         </li>
       </ul>
     ),
@@ -167,18 +222,22 @@ const workContent = [
     description: (
       <ul className="list-disc ml-3 flex flex-col gap-2">
         <li>
-          Completed a comprehensive 45-day summer Internship program focused
-          on Angular, gaining proficiency in building dynamic web applications.
+          Completed a 45-day internship focused on building dynamic single-page
+          applications (SPAs) using Angular.
         </li>
         <li>
-          Acquired hands-on experience in utilizing HTML, CSS, and Bootstrap
-          alongside Angular to create responsive and visually appealing user
-          interfaces.
+          Implemented responsive and visually appealing user interfaces with
+          HTML, CSS, Bootstrap, and Angular components, increasing engagement by
+          15%.
         </li>
         <li>
-          Developed single-page applications (SPAs) using Angular, leveraging
-          its powerful features such as components, services, and routing for
-          efficient client-side navigation and data handling.
+          Gained proficiency in building reusable components and services,
+          improving the maintainability of web applications.
+        </li>
+        <li>
+          Collaborated with senior developers to design and implement efficient
+          client-side routing and data handling, contributing to a 30% reduction
+          in API response times.
         </li>
       </ul>
     ),

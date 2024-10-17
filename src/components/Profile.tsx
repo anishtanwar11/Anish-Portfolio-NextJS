@@ -69,7 +69,7 @@ function Profile() {
         <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" />
 
         <div className="flex justify-center text-center mt-4 w-full">
-          <a href="/Anish_Tanwar-Resume-2024.pdf" download>
+          <a href="/Anish_Resume_2024.pdf" download>
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"

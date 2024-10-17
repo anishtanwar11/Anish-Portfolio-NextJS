@@ -24,15 +24,17 @@ import Git from "../assets/tools/git.svg";
 import Netlify from "../assets/tools/netlify.svg";
 import VScode from "../assets/tools/visual-studio.svg";
 import Vercel from "../assets/tools/vercel.svg";
+import Postman from "../assets/tools/postman.svg";
+import Figma from "../assets/tools/figma.svg";
 
 export default function SkillIcons() {
   const {theme} = useTheme();
 
   return (
     <div>
-       <div className=" flex flex-col md:flex-row  gap-3 w-full">
+       <div className=" grid grid-cols-2 gap-3 w-full">
         
-        <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl flex flex-col items-center justify-center md:w-1/2 p-3 md:p-4">
+        <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl flex flex-col items-center justify-center  p-3 md:p-4">
           <h1 className="font-semibold text-xl text-gray-800 dark:text-white">Frontend Skills</h1>
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-2 mb-6 h-[1px] w-full" />
  
@@ -69,7 +71,7 @@ export default function SkillIcons() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 md:w-1/2">
+        <div className="grid grid-flow-row gap-4 ">
           <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl  flex flex-col items-center justify-center p-3 md:p-4">
             <h1 className="font-semibold text-xl text-gray-800 dark:text-white">
               Backtend Skills
@@ -103,11 +105,21 @@ export default function SkillIcons() {
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Git} alt="" className="w-12" />
                 </li>
-                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
-                  <Image src={Netlify} alt="" className="w-12" />
-                </li>
+                
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={VScode} alt="" className="w-12" />
+                </li>
+
+                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={Postman} alt="" className="w-12" />
+                </li>
+
+                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={Figma} alt="" className="w-12" />
+                </li>
+
+                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={Netlify} alt="" className="w-12" />
                 </li>
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Vercel} alt="" className="w-12" />
