@@ -8,27 +8,18 @@ export default function Home() {
     <main className="pt-4 lg:pt-0 min-h-screen  antialiased bg-grid-white/[0.02] flex flex-col gap-4">
       <div className="lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  lg:p-4 rounded-[15px]">
         <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
-          ABOUT
+        What I Do
         </h1>
         <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
-          I’m an MERN Stack and NextJS Developer. I create beautiful and usable
-          interfaces, for desktop and mobile applications.
+          I&apos;m a passionate <span className="dark:text-white text-black">MERN</span> Stack and <span className="dark:text-white text-black">Next.js</span> Developer with a dedication
+          to building clean, efficient, and user-friendly web applications.
         </p>
 
         <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
-          I&apos;ve hands-on experience from internships at Primewise Consulting
-          and Solitaire Infosys. My expertise spans both frontend and backend
+          I&apos;ve hands-on experience from internships at <span className="dark:text-white text-black">Primewise Consulting</span> and <span className="dark:text-white text-black">Solitaire Infosys.</span> My expertise spans both frontend and backend
           development, allowing me to build comprehensive solutions from the
           ground up.
         </p>
-        {/* <p className="font-xl text-justify text-neutral-600 dark:text-neutral-400">
-          I&apos;m Anish Tanwar, an enthusiastic web developer driven by the
-          incredible potential of web development to foster connections and
-          drive innovation. As a newcomer in this dynamic field, my unwavering
-          commitment lies in creating user-friendly websites and continuously
-          evolving my skills. Let&apos;s join forces and embark on a journey to
-          unlock the boundless opportunities of the web together!
-        </p> */}
       </div>
 
       <div className="flex flex-col md:flex-row gap-4 w-full">
@@ -39,13 +30,13 @@ export default function Home() {
           >
             <i className="ri-award-line text-black dark:text-white text-2xl"></i>
 
-<div>
-            <p className="text-lg font-semibold text-gray-800 dark:text-white">
-              Experience
-            </p>
-            <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
-              8 Months
-            </p>
+            <div>
+              <p className="text-lg font-semibold text-gray-800 dark:text-white">
+                Experience
+              </p>
+              <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
+                8 Months
+              </p>
             </div>
           </Link>
 
@@ -55,12 +46,12 @@ export default function Home() {
           >
             <i className="ri-briefcase-line text-black dark:text-white text-2xl"></i>
             <div>
-            <p className="text-lg font-semibold text-gray-800 dark:text-white">
-              Completed
-            </p>
-            <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
-              6+ Projects
-            </p>
+              <p className="text-lg font-semibold text-gray-800 dark:text-white">
+                Completed
+              </p>
+              <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
+                6+ Projects
+              </p>
             </div>
           </Link>
         </div>

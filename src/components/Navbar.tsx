@@ -37,8 +37,7 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <div className="flex gap-2 items-center justify-center">
           <div
-            className="w-11 h-11  rounded-full overflow-hidden block lg:hidden cursor-pointer relative "
-           
+            className="w-11 h-11  rounded-full overflow-hidden block lg:hidden cursor-pointer relative"
           >
            <BorderBeam size={50} duration={5} delay={9} />
             {profileOpen === false ? (
@@ -75,33 +74,10 @@ function Navbar({ className }: { className?: string }) {
             </Link>
 
             <Link href={"/projects"}>
-              <MenuItem setActive={setActive} active={active} item="Projects">
-                <div className="text-sm grid grid-cols-2 gap-10 p-4">
-                  <ProductItem
-                    title="Noise Clone"
-                    href="https://ontime-anish.netlify.app/"
-                    src="http://res.cloudinary.com/drgurmhwb/image/upload/v1712741696/hpkvxznguxfwe3hxm4r3.png"
-                    description="Online shoping plateform."
-                  />
-                  <ProductItem
-                    title="Portfolio Website"
-                    href="https://anishtanwar.netlify.app/"
-                    src="http://res.cloudinary.com/drgurmhwb/image/upload/v1712639688/exf2lqjynk4q6upgzk0l.png"
-                    description="Personal portfolio website template."
-                  />
-                  <ProductItem
-                    title="On Time"
-                    href="https://ontime-anish.netlify.app/"
-                    src="http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png"
-                    description="Task management app."
-                  />
-                  <ProductItem
-                    title="Portfolio Template"
-                    href="https://userogue.com"
-                    src="https://res.cloudinary.com/drgurmhwb/image/upload/v1721205514/Portfolio-template_o787pk.png"
-                    description="Personal portfolio website template."
-                  />
-                </div>
+              <MenuItem 
+                setActive={setActive} 
+                active={active} 
+                item="Projects">
               </MenuItem>
             </Link>
 

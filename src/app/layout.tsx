@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/ThemeContext"; // Adjust the path if necessary
-
 // Components
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";

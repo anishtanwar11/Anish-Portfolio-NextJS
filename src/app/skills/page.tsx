@@ -7,7 +7,7 @@ export default function Skills() {
       <div className="flex flex-col md:flex-row lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center lg:px-4 mt-4 md:mt-0">
         <div className="grid gap-3">
           <h1 className="text-gray-800 dark:text-white text-xl md:text-3xl font-semibold">
-            MY SKILLS
+            My Skills
           </h1>
           <h2 className="text-neutral-600 dark:text-neutral-400 font-xl">
             See fully what skills I have and perform, to develop the projects
