@@ -66,15 +66,7 @@ const ProjectDetails = () => {
   return (
     <div className="my-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center p-0 md:p-8">
       <div className="flex flex-col gap-8 w-full text-right">
-        <div className="flex gap-2 justify-end text-[.8rem] mg:text-[1rem] font-semibold text-gray-800 dark:text-white">
-          <Link href={"/"} className="">
-            Home
-          </Link>
-          {"/"}
-          <Link href={"/projects"}>Projects</Link>
-          {"/"} &nbsp;
-          {project.name}
-        </div>
+        
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
             <div className="flex gap-2">
@@ -111,7 +103,11 @@ const ProjectDetails = () => {
               Description
             </p>
             <p className="text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal mt-2">
-              {project.description}
+              {project.description.map((elem, index) => (
+                <ul key={index} className="list-disc pl-3">
+                    <li  className="mb-2"> {elem}</li>
+                </ul>
+              ))}
             </p>
           </div>
           <div className="flex gap-4 mt-4">

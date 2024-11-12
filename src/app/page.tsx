@@ -10,6 +10,7 @@ export default function Home() {
         <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
         What I Do
         </h1>
+        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">I enjoy creating Web products.</p>
         <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
           I&apos;m a passionate <span className="dark:text-white text-black">MERN</span> Stack and <span className="dark:text-white text-black">Next.js</span> Developer with a dedication
           to building clean, efficient, and user-friendly web applications.

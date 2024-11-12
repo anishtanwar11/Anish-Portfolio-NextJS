@@ -3,15 +3,21 @@ import SocialIconDock from "./SocialIconsDock";
 function Footer() {
   return (
     <div className="w-full lg:px-0">
-
-      <div className=" flex-col py-8  rounded-xl w-full mb-8 md:my-6  dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
-        {/* Radial gradient for the container to give a faded look */}
-        <div className=" absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" />
+      <div className=" flex-col py-8  rounded-xl w-full mb-8 md:my-6  dark:bg-black bg-white flex items-center justify-center">
         <p className="text-center text-2xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 ">
-            Designed and Developed by <br /> Anish Tanwar
+          Designed and Developed by <br /> Anish Tanwar
         </p>
-        <div className="mt-8">
-            <SocialIconDock />
+        {/* <p className="text-white">Web Developer</p> */}
+
+        <div className="px-3lg:px-0 flex flex-wrap w-full text-center md:text-left gap-y-3 justify-center md:justify-between items-center mt-8">
+          <div className="text-black dark:text-white text-base">
+            &copy; 2024 Anish Tanwar, All Rights Reserved.
+            <p className="text-gray-500 text-xs font-semibold">Made with love 😍</p>
+          </div>
+          <div className="text-gray-500 text-xs font-semibold">
+            <p>Last updated by Anish on November 12, 2024, 05:21 PM </p>
+          </div>
         </div>
       </div>
     </div>

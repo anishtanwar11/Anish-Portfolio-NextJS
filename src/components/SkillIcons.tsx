@@ -32,9 +32,9 @@ export default function SkillIcons() {
 
   return (
     <div>
-       <div className=" grid grid-cols-2 gap-3 w-full">
+       <div className="flex flex-col gap-y-4 md:flex-row md:gap-x-4 items-start justify-center w-full">
         
-        <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl flex flex-col items-center justify-center  p-3 md:p-4">
+        <div className="w-full border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl flex flex-col items-center justify-center  p-3 md:p-4">
           <h1 className="font-semibold text-xl text-gray-800 dark:text-white">Frontend Skills</h1>
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent mt-2 mb-6 h-[1px] w-full" />
  
@@ -71,7 +71,7 @@ export default function SkillIcons() {
           </div>
         </div>
 
-        <div className="grid grid-flow-row gap-4 ">
+        <div className="w-full grid grid-flow-row gap-4 ">
           <div className="border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-xl  flex flex-col items-center justify-center p-3 md:p-4">
             <h1 className="font-semibold text-xl text-gray-800 dark:text-white">
               Backtend Skills
