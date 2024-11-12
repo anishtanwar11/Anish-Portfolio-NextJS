@@ -66,7 +66,6 @@ const ProjectDetails = () => {
   return (
     <div className="my-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center p-0 md:p-8">
       <div className="flex flex-col gap-8 w-full text-right">
-        
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
             <div className="flex gap-2">
@@ -103,9 +102,12 @@ const ProjectDetails = () => {
               Description
             </p>
             <p className="text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal mt-2">
-              {project.description.map((elem, index) => (
+              {(Array.isArray(project.description)
+                ? project.description
+                : [project.description]
+              ).map((elem, index) => (
                 <ul key={index} className="list-disc pl-3">
-                    <li  className="mb-2"> {elem}</li>
+                  <li className="mb-2">{elem}</li>
                 </ul>
               ))}
             </p>
@@ -140,8 +142,11 @@ const ProjectDetails = () => {
           </div>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
-          {project.imageUrl.map((path,index ) => (
-            <div key={index} className="flex rounded-[5px] overflow-hidden justify-center items-center border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]">
+          {project.imageUrl.map((path, index) => (
+            <div
+              key={index}
+              className="flex rounded-[5px] overflow-hidden justify-center items-center border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]"
+            >
               <Image
                 src={path}
                 alt="Project Image"
