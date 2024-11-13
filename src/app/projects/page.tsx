@@ -45,11 +45,11 @@ function ProjectDisplay() {
   return (
     <div className="pt-4 mb-4 lg:pt-0 w-full justify-center flex">
       <div className="w-full">
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+        <ul className=" justify-center md:columns-2 ">
           {projects.map((project) => (
             <li
               key={project._id}
-              className="bg-gray-50 dark:bg-[#141515] border dark:border-white/[0.2] border-black/[0.1]  relative rounded-xl p-3 md:p-5 "
+              className="mb-5 bg-gray-50 dark:bg-[#141515] border dark:border-white/[0.2] border-black/[0.1] relative rounded-xl p-3 md:p-5 "
             >
               <Link
                 href={`/projects/[id]`}
@@ -62,7 +62,7 @@ function ProjectDisplay() {
                     alt="Project Image"
                     width={500}
                     height={280}
-                    className="h-60 lg:h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   />
                 </div>
                 <div className="pt-4 flex flex-col gap-2">

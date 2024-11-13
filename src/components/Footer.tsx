@@ -8,8 +8,10 @@ function Footer() {
         <p className="text-center text-2xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 ">
           Designed and Developed by <br /> Anish Tanwar
         </p>
-        {/* <p className="text-white">Web Developer</p> */}
 
+        <div className="flex md:hidden">
+          <SocialIconDock />
+        </div>
         <div className="px-3lg:px-0 flex flex-wrap w-full text-center md:text-left gap-y-3 justify-center md:justify-between items-center mt-8">
           <div className="text-black dark:text-white text-base">
             &copy; 2024 Anish Tanwar, All Rights Reserved.

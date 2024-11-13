@@ -81,7 +81,7 @@ const ProjectDetails = () => {
             <p className="text-[15px] flex justify-start font-semibold text-gray-800 dark:text-white">
               Built with the latest tech stack
             </p>
-            <div className="flex flex-wrap gap-4 mt-2">
+            <div className="flex items-center flex-wrap gap-4 mt-2">
               {project.techStack.map((tech, index) => (
                 <div key={index} className="relative group">
                   <Image

@@ -1,6 +1,52 @@
 [
     {
         "_id": "1001",
+        "name": "Notebook",
+        "description": [
+            "Developed a Notebook app using the MERN Stack with secure User Authentication, JWT-based access and refresh tokens.",
+            "Employed Redux Toolkit for efficient and smooth state management on the frontend.",
+            "Users can create, search, and organize multiple notebooks with custom sections and pages. Includes a search bar for quickly finding desired notebooks.",
+            "Integrated TinyMCE editor for a comprehensive note-taking experience. Supports text formatting (bold, italics, colors), image uploads, tables, and more.",
+            "Developed multiple controllers and routes for notebooks, sections, and pages. Includes create, retrieve, update, and delete operations for efficient data handling.",
+            "Designed to enhance productivity and organized note management, delivering both functionality and a seamless user experience."
+        ],
+        "techStack": [
+            {
+                "path": "/assets/frontend/react.png",
+                "name": "ReactJS"
+            },
+            {
+                "path": "/assets/frontend/javascript.svg",
+                "name": "Javascript"
+            },
+            {
+                "path": "/assets/frontend/tailwind.svg",
+                "name": "Tailwind CSS"
+            },
+            {
+                "path": "/assets/backend/nodejs.svg",
+                "name": "NodeJS"
+            },
+            {
+                "path": "/assets/backend/express.svg",
+                "name": "ExpressJS"
+            },
+            {
+                "path": "/assets/backend/mongo.svg",
+                "name": "MongoDB"
+            }
+        ],
+        "category": "MERN",
+        "liveLink": "https://cloudbooks.vercel.app/",
+        "sourceCodeLink": "https://github.com/anishtanwar11/user-auth-frontend",
+        "coverImg": "https://res.cloudinary.com/drgurmhwb/image/upload/v1731474377/FP_1_bvpnfq.png",
+        "imageUrl": [
+            "https://res.cloudinary.com/drgurmhwb/image/upload/v1731474377/FP_1_bvpnfq.png"
+        ],
+        "__v": 0
+    },
+    {
+        "_id": "1002",
         "name": "Portfolio Website",
         "description": [
             "Developed a personal portfolio website using JavaScript, HTML, and CSS to showcase my skills and projects in a professional layout.",
@@ -36,7 +82,45 @@
         "__v": 0
     },
     {
-        "_id": "1002",
+        "_id": "1004",
+        "name": "on.time",
+        "description": [
+            "Developed a responsive ToDo app named on.time using Angular 14, TypeScript, HTML, and CSS, designed to streamline task management for users.",
+            "Implemented an intuitive task input feature with an input field and save button, allowing users to quickly add tasks to their list with ease.",
+            "Enabled task deletion functionality so users can mark tasks as complete and remove them with a single click, enhancing the app's usability and organization.",
+            "Integrated local storage to save tasks persistently, allowing users to retrieve their task list even after refreshing or closing the app, ensuring data reliability.",
+            "Utilized Angular’s powerful features such as two-way data binding for real-time updates and component-based architecture to keep the code modular and maintainable.",
+            "Designed a fully responsive layout, ensuring a consistent and user-friendly experience across all devices, from desktops to mobile screens."
+        ],
+        "techStack": [
+            {
+                "path": "/assets/frontend/file-type-angular.svg",
+                "name": "Angular"
+            },
+            {
+                "path": "/assets/frontend/typescript.svg",
+                "name": "TypeScript"
+            },
+            {
+                "path": "/assets/frontend/html.svg",
+                "name": "HTML"
+            },
+            {
+                "path": "/assets/frontend/css.svg",
+                "name": "CSS"
+            }
+        ],
+        "category": "angular",
+        "liveLink": "https://ontime-anish.netlify.app/",
+        "sourceCodeLink": "https://github.com/anishtanwar11/note-app",
+        "coverImg": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png",
+        "imageUrl": [
+            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png"
+        ],
+        "__v": 0
+    },
+    {
+        "_id": "1003",
         "name": "Noise Clone",
         "description": [
             "Developed a Noise Clone e-commerce website with essential shopping features, including product categories, product detail pages, search filters, and a shopping cart.",
@@ -81,49 +165,9 @@
         ],
         "__v": 0
     },
+
     {
-        "_id": "1003",
-        "name": "on.time",
-        "description": [
-            "Developed a responsive ToDo app named on.time using Angular 14, TypeScript, HTML, and CSS, designed to streamline task management for users.",
-            "Implemented an intuitive task input feature with an input field and save button, allowing users to quickly add tasks to their list with ease.",
-            "Enabled task deletion functionality so users can mark tasks as complete and remove them with a single click, enhancing the app's usability and organization.",
-            "Integrated local storage to save tasks persistently, allowing users to retrieve their task list even after refreshing or closing the app, ensuring data reliability.",
-            "Utilized Angular’s powerful features such as two-way data binding for real-time updates and component-based architecture to keep the code modular and maintainable.",
-            "Designed a fully responsive layout, ensuring a consistent and user-friendly experience across all devices, from desktops to mobile screens."
-        ],
-        "techStack": [
-            {
-                "path": "/assets/frontend/file-type-angular.svg",
-                "name": "Angular"
-            },
-            {
-                "path": "/assets/frontend/typescript.svg",
-                "name": "TypeScript"
-            },
-            {
-                "path": "/assets/frontend/html.svg",
-                "name": "HTML"
-            },
-            {
-                "path": "/assets/frontend/css.svg",
-                "name": "CSS"
-            }
-        ],
-        "category": "angular",
-        "liveLink": "https://ontime-anish.netlify.app/",
-        "sourceCodeLink": "https://github.com/anishtanwar11/note-app",
-        "coverImg": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png",
-        "imageUrl": [
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png",
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png",
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png",
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712742966/c3ryxqvhp1oduvb8klks.png"
-        ],
-        "__v": 0
-    },
-    {
-        "_id": "1004",
+        "_id": "1005",
         "name": "Portfolio Website",
         "description": [
             "Developed a dynamic shopping web app with core features like product categories, tab filters, search bar, and cart functionality.",
@@ -158,7 +202,7 @@
         "__v": 0
     },
     {
-        "_id": "1005",
+        "_id": "1006",
         "name": "Nobi's 24",
         "description": [
             "Developed a dynamic shopping web app with core features like product categories, tab filters, search bar, and cart functionality.",
@@ -185,9 +229,6 @@
         "sourceCodeLink": "https://github.com/anishtanwar11/Nobi24",
         "coverImg": "http://res.cloudinary.com/drgurmhwb/image/upload/v1712640891/lkioegru5xcs2npcyfj3.png",
         "imageUrl": [
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712640891/lkioegru5xcs2npcyfj3.png",
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712640891/lkioegru5xcs2npcyfj3.png",
-            "http://res.cloudinary.com/drgurmhwb/image/upload/v1712640891/lkioegru5xcs2npcyfj3.png",
             "http://res.cloudinary.com/drgurmhwb/image/upload/v1712640891/lkioegru5xcs2npcyfj3.png"
         ],
         "__v": 0

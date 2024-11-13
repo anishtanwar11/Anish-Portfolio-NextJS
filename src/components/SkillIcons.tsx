@@ -24,6 +24,7 @@ import Git from "../assets/tools/git.svg";
 import Netlify from "../assets/tools/netlify.svg";
 import VScode from "../assets/tools/visual-studio.svg";
 import Vercel from "../assets/tools/vercel.svg";
+import VercelLight from "../assets/tools/vercel-light.svg";
 import Postman from "../assets/tools/postman.svg";
 import Figma from "../assets/tools/figma.svg";
 
@@ -111,18 +112,19 @@ export default function SkillIcons() {
                 </li>
 
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={Netlify} alt="" className="w-12" />
+                </li>
+
+                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={theme === "dark" ? VercelLight : Vercel} alt="" className="w-12" />
+                </li>
+                
+                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Postman} alt="" className="w-12" />
                 </li>
 
                 <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Figma} alt="" className="w-12" />
-                </li>
-
-                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
-                  <Image src={Netlify} alt="" className="w-12" />
-                </li>
-                <li className="w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
-                  <Image src={Vercel} alt="" className="w-12" />
                 </li>
               </ul>
             </div>
