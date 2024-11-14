@@ -7,7 +7,7 @@ const FeatureProject = () => {
   return (
     <div>
       <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
-        Feature Project
+        Featured Projects
       </h1>
 
         <div className="flex flex-col md:flex-row gap-4 mb-6 ">
