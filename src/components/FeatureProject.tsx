@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import FP1 from "@/assets/images/FP_1.png";
+import FP1 from "@/assets/images/cover-notebook.png";
 import FP2 from "@/assets/images/noise-img.png";
 
 const FeatureProject = () => {
