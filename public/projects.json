@@ -39,9 +39,14 @@
         "category": "MERN",
         "liveLink": "https://cloudbooks.vercel.app/",
         "sourceCodeLink": "https://github.com/anishtanwar11/user-auth-frontend",
-        "coverImg": "https://res.cloudinary.com/drgurmhwb/image/upload/v1731474377/FP_1_bvpnfq.png",
+        "coverImg": "/assets/images/cover-notebook.png",
         "imageUrl": [
-            "https://res.cloudinary.com/drgurmhwb/image/upload/v1731474377/FP_1_bvpnfq.png"
+            "/assets/images/cover-notebook.png",
+            "/assets/images/notebook-3.png",
+            "/assets/images/notebook-2.png",
+            "/assets/images/notebook-5.png",
+            "/assets/images/notebook-4.png"
+            
         ],
         "__v": 0
     },

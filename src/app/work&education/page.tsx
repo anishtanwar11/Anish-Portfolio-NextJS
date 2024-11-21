@@ -211,7 +211,7 @@ const workContent = [
     badge: "Web Development Intern",
     certificateImage: PrimeWise,
     logoImage:
-      "https://media.licdn.com/dms/image/D560BAQFV-sRoAjY2-Q/company-logo_200_200/0/1694249171005/primewise_consulting_logo?e=1728518400&v=beta&t=wb-66b97tUhLtn4eCYTMe5VczHQg8uwkLeC3jpCT9kM",
+      "https://media.licdn.com/dms/image/v2/D560BAQFV-sRoAjY2-Q/company-logo_200_200/company-logo_200_200/0/1694249171005/primewise_consulting_logo?e=1740009600&v=beta&t=zpWnlfh0Wk9YhW8E6_zmWGYQAIUqLZxXTiLCdYLzfck",
   },
   {
     title: "Solitaire Infosys Inc",
@@ -244,7 +244,7 @@ const workContent = [
     badge: "Frontend Development Intern",
     certificateImage: Solitare,
     logoImage:
-      "https://media.licdn.com/dms/image/C4D0BAQE8xg9YXHSNXA/company-logo_200_200/0/1630560859402/solitaire_infosys_inc_logo?e=1728518400&v=beta&t=gR3RWe64e6KsdBBi9YtTDqTr9LPHmKextY0iAaBumgY",
+      "https://media.licdn.com/dms/image/v2/C4D0BAQE8xg9YXHSNXA/company-logo_200_200/company-logo_200_200/0/1630560859402/solitaire_infosys_inc_logo?e=1740009600&v=beta&t=EZHFipxv4c8gUG4vrglKDViyD3BSkSFHOCNPoxVnAIw",
   },
 ];
 
