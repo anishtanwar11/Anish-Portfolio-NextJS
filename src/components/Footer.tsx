@@ -18,7 +18,7 @@ function Footer() {
             <p className="text-gray-500 text-xs font-semibold">Made with love 😍</p>
           </div>
           <div className="text-gray-500 text-xs font-semibold">
-            <p>Last updated by Anish on November 12, 2024, 05:21 PM </p>
+            <p>Last updated by Anish on November 22, 2024, 02:43 PM </p>
           </div>
         </div>
       </div>

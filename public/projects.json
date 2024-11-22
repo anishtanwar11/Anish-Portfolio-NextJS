@@ -16,6 +16,10 @@
                 "name": "ReactJS"
             },
             {
+                "path": "/assets/frontend/redux-icon.svg",
+                "name": "Redux"
+            },
+            {
                 "path": "/assets/frontend/javascript.svg",
                 "name": "Javascript"
             },
@@ -32,9 +36,29 @@
                 "name": "ExpressJS"
             },
             {
+                "path": "/assets/backend/restapi-icon.svg",
+                "name": "REST APIs"
+            },
+            {
                 "path": "/assets/backend/mongo.svg",
                 "name": "MongoDB"
             }
+        ],
+        "packages": [
+            "@reduxjs/toolkit",
+            "@tinymce/tinymce-react",
+            "axios",
+            "react-router-dom",
+            "react-toastify",
+            "bcrypt",
+            "cors",
+            "cookie-parser",
+            "jsonwebtoken",
+            "mongoose",
+            "nodemailer",
+            "mailgen",
+            "cloudinary",
+            "mailgen"
         ],
         "category": "MERN",
         "liveLink": "https://cloudbooks.vercel.app/",

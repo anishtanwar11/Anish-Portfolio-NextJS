@@ -8,6 +8,7 @@ import Loading from "@/components/Loading";
 interface Project {
   _id: string;
   name: string;
+  packages: string[];
   description: string;
   coverImg: string;
 }
@@ -71,9 +72,25 @@ function ProjectDisplay() {
                       {project.name}
                     </h1>
                   </div>
-                  <p className=" truncate text-neutral-500 text-xs max-w-sm  dark:text-neutral-300">
-                    {project.description}
-                  </p>
+                  {project.packages 
+                  ? (
+                    <div>
+                      <p className="flex flex-wrap gap-2 text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal">
+                        {project.packages.slice(0, 2).map((elem, index) => (
+                          <ul
+                            key={index}
+                            className="flex  border-[1px] border-slate-600 dark:bg-gray-800 w-max dark:text-white text-black text-xs px-3 py-1 rounded"
+                          >
+                            <li className="">{elem}</li>
+                          </ul>
+                        ))}
+                      </p>
+                    </div>
+                  ) : (
+                    <p className=" truncate text-neutral-500 text-xs max-w-sm  dark:text-neutral-300">
+                      {project.description}
+                    </p>
+                  )}
                 </div>
               </Link>
             </li>

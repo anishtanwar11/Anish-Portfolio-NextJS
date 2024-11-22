@@ -11,14 +11,14 @@ export default function Home() {
         <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
         What I Do
         </h1>
-        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">I enjoy creating Web products.</p>
+        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">I enjoy <span className="text-black dark:text-white font-bold">creating</span> Web products.</p>
         <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
-          I&apos;m a passionate <span className="dark:text-white text-black">MERN</span> Stack and <span className="dark:text-white text-black">Next.js</span> Developer with a dedication
+          I&apos;m a passionate <span className="dark:text-white text-black font-bold">MERN</span> Stack and <span className="dark:text-white text-black font-bold">Next.js</span> Developer with a dedication
           to building clean, efficient, and user-friendly web applications.
         </p>
 
         <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
-          I&apos;ve hands-on experience from internships at <span className="dark:text-white text-black">Primewise Consulting</span> and <span className="dark:text-white text-black">Solitaire Infosys.</span> My expertise spans both frontend and backend
+          I&apos;ve hands-on experience from internships at <span className="dark:text-white text-black font-bold">Primewise Consulting</span> and <span className="dark:text-white text-black font-bold">Solitaire Infosys.</span> My expertise spans both frontend and backend
           development, allowing me to build comprehensive solutions from the
           ground up.
         </p>

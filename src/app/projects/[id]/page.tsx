@@ -15,7 +15,8 @@ interface TechStackItem {
 interface Project {
   _id: string;
   name: string;
-  description: string;
+  packages: string[];
+  description: string[];
   imageUrl: string[];
   techStack: TechStackItem[];
   liveLink: string;
@@ -68,12 +69,12 @@ const ProjectDetails = () => {
       <div className="flex flex-col gap-8 w-full text-right">
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
-            <div className="flex gap-2">
+            <div className="flex gap-x-2">
               <h2 className="text-2xl md:text-4xl font-bold uppercase tracking-wider  text-gray-800 dark:text-white ">
                 {project.name}
               </h2>
               <div className="text-[#f59e0b]">
-                <i className="ri-star-s-fill"></i>
+                <i className="ri-star-s-fill text-xl md:text-2xl lg:text-3xl"></i>
               </div>
             </div>
           </div>
@@ -97,15 +98,30 @@ const ProjectDetails = () => {
               ))}
             </div>
           </div>
+          {project.packages && (
+            <div>
+              <p className="text-[15px] flex justify-start font-semibold text-gray-800 dark:text-white">
+                NPM Packages
+              </p>
+              <p className="flex flex-wrap gap-2 text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal mt-2">
+                {project.packages.map((elem, index) => (
+                  <ul
+                    key={index}
+                    className="flex  border-[1px] border-slate-600 bg-gray-800 w-max text-white text-sm px-3 py-1 rounded"
+                  >
+                    <li className="">{elem}</li>
+                  </ul>
+                ))}
+              </p>
+            </div>
+          )}
+
           <div>
             <p className="text-[15px] flex justify-start font-semibold text-gray-800 dark:text-white">
               Description
             </p>
             <p className="text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal mt-2">
-              {(Array.isArray(project.description)
-                ? project.description
-                : [project.description]
-              ).map((elem, index) => (
+              {project.description.map((elem, index) => (
                 <ul key={index} className="list-disc pl-3">
                   <li className="mb-2">{elem}</li>
                 </ul>
