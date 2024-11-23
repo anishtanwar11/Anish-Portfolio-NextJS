@@ -46,7 +46,7 @@ const FeatureProject = () => {
       <div className="flex flex-col-reverse md:flex-row gap-4">
         <div className="text-gray-800 dark:text-white md:w-1/2">
           <h1 className="flex items-center gap-x-2 text-lg font-semibold text-gray-800 dark:text-white">
-            Noise Clone
+          🛍️ Noise Clone
           </h1>
           <p className="mt-2 text-base text-neutral-800 dark:text-neutral-200">
             <i>
