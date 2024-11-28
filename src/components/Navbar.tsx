@@ -109,7 +109,7 @@ function Navbar({ className }: { className?: string }) {
 
           <button
             onClick={handleThemeSwitch}
-            className="md:flex mr-3 md:mr-0 text-black dark:text-white text-xl md:border-l-[2px] md:pl-3 border-slate-600/20 dark:lg:border-slate-300/20 hidden"
+            className="md:flex mr-3 md:mr-0 text-black dark:text-white text-xl h-6 md:items-center md:border-l-[2px] md:pl-3 border-slate-900/20 dark:lg:border-slate-100/50 hidden"
           >
             {theme === "dark" ? (
               <i className="ri-sun-fill"></i>
@@ -142,42 +142,42 @@ function Navbar({ className }: { className?: string }) {
       </Menu>
 
       {menuOpen && (
-        <ul className="md:hidden flex flex-col gap-4 absolute top-0 pt-24 pb-4 px-8 right-0 left-0 w-full text-[1.1rem] backdrop-blur-xl dark:bg-black/30 dark:border-white/[0.2] shadow-lg z-[-1] text-black dark:text-white">
+        <ul className="md:hidden flex flex-col gap-4 absolute top-0 pt-24 pb-4 px-8 right-0 left-0 w-full text-[1.1rem] backdrop-blur-3xl dark:bg-black/30 shadow-lg z-[-1] text-black dark:text-white">
           <li onClick={() => setProfileOpen(false)}>
             <Link href={"/"} onClick={() => setMenuOpen(false)}>
-              <i className="ri-home-4-line"></i> Home
+              <i className="ri-home-4-line text-xl"></i> Home
             </Link>
           </li>
           <li onClick={() => setProfileOpen(true)}>
             <Link href={""} onClick={() => setMenuOpen(false)}>
-              <i className="ri-user-line"></i> Profile
+              <i className="ri-user-line text-xl"></i> Profile
             </Link>
           </li>
           <li onClick={() => setProfileOpen(false)}>
             <Link href={"/projects"} onClick={() => setMenuOpen(false)}>
-              <i className="ri-file-text-line"></i> Projects
+              <i className="ri-file-text-line text-xl"></i> Projects
             </Link>
           </li>
           <li onClick={() => setProfileOpen(false)}>
             <Link href={"/skills"} onClick={() => setMenuOpen(false)}>
-              <i className="ri-shield-star-line"></i> Skills
+              <i className="ri-shield-star-line text-xl"></i> Skills
             </Link>
           </li>
           <li onClick={() => setProfileOpen(false)}>
             <Link href={"/work&education"} onClick={() => setMenuOpen(false)}>
-              <i className="ri-briefcase-line"></i> Work/Education
+              <i className="ri-briefcase-line text-xl"></i> Work/Education
             </Link>
           </li>
           <li onClick={() => setProfileOpen(false)}>
             <Link href={"/contact"} onClick={() => setMenuOpen(false)}>
-              <i className="ri-chat-3-line"></i> Contact Me
+              <i className="ri-chat-3-line text-xl"></i> Contact Me
             </Link>
           </li>
           <li>
             <button onClick={handleThemeSwitch} className="">
               {theme === "dark" ? (
                 <>
-                  <i className="ri-sun-fill"></i> Dark
+                  <i className="ri-sun-fill text-xl"></i> Dark
                 </>
               ) : (
                 <div className="flex justify-center gap-x-1">
@@ -205,8 +205,8 @@ function Navbar({ className }: { className?: string }) {
       )}
 
       {profileOpen && (
-        <div className="flex w-full h-[100vh] overflow-scroll backdrop-blur-xl dark:bg-black/30 dark:border-white/[0.2] lg:hidden absolute top-0 left-0 right-0 z-[-2]">
-          <div className="h-full mt-10 mb-8 w-full flex items-center justify-center lg:hidden">
+        <div className="flex w-full h-[100vh] overflow-scroll backdrop-blur-3xl dark:bg-black/30 dark:border-white/[0.2] lg:hidden absolute top-0 left-0 right-0 z-[-2]">
+          <div className="pt-24 pb-6 h-max  w-full flex items-center justify-center lg:hidden">
             <Profile />
           </div>
         </div>

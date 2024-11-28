@@ -46,11 +46,15 @@ export default function SkillIcons() {
             <ul className="grid grid-cols-3 gap-4 md:gap-6">
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32  rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={React} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">React</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  React
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32  rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Redux} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Redux</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Redux
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image
@@ -62,31 +66,45 @@ export default function SkillIcons() {
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Angular} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Angular</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Angular
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Javascript} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Javascript</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Javascript
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Typescript} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Typescript</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Typescript
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Html} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">HTML 5</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  HTML 5
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Css} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">CSS 3</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  CSS 3
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Tailwind} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Tailwind CSS</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Tailwind CSS
+                </p>
               </li>
               <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                 <Image src={Bootstrap} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Bootstrap</p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  Bootstrap
+                </p>
               </li>
             </ul>
           </div>
@@ -103,7 +121,9 @@ export default function SkillIcons() {
               <ul className="grid grid-cols-3 gap-3 md:gap-6">
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={NodeJS} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">NodeJS</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    NodeJS
+                  </p>
                 </li>
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image
@@ -111,19 +131,27 @@ export default function SkillIcons() {
                     alt=""
                     className="w-12"
                   />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Express</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Express
+                  </p>
                 </li>
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={RestApi} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">REST APIs</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    REST APIs
+                  </p>
                 </li>
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Javascript} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Javascript</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Javascript
+                  </p>
                 </li>
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={MongoDB} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">MongoDB</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    MongoDB
+                  </p>
                 </li>
               </ul>
             </div>
@@ -143,21 +171,29 @@ export default function SkillIcons() {
                     alt=""
                     className="w-12"
                   />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Github</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Github
+                  </p>
                 </li>
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Git} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Git</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Git
+                  </p>
                 </li>
 
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
-                  <Image src={VScode} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">VSCode</p>
+                  <Image src={Postman} alt="" className="w-12" />
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Postman
+                  </p>
                 </li>
 
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Netlify} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Netlify</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Netlify
+                  </p>
                 </li>
 
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
@@ -166,17 +202,23 @@ export default function SkillIcons() {
                     alt=""
                     className="w-12"
                   />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Vercel</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Vercel
+                  </p>
                 </li>
 
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
-                  <Image src={Postman} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Postman</p>
+                  <Image src={VScode} alt="" className="w-12" />
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    VSCode
+                  </p>
                 </li>
 
                 <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
                   <Image src={Figma} alt="" className="w-12" />
-                <p className="text-sm text-gray-700 dark:text-gray-300">Figma</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Figma
+                  </p>
                 </li>
               </ul>
             </div>

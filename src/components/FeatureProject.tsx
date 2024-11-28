@@ -36,7 +36,7 @@ const FeatureProject = () => {
           <a
             href="https://cloudbooks.vercel.app/"
             target="_blank"
-            className="border-2 border-slate-600/30 dark:lg:border-slate-300/30 px-4 py-2 rounded-[6px] text-sm dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
+            className="border-[1px] border-slate-900/30 dark:border-slate-100/30 px-4 py-2 rounded-[6px] text-sm dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
           >
             <i className="ri-links-line mb-1"></i> Take a tour
           </a>
@@ -65,7 +65,7 @@ const FeatureProject = () => {
           <a
             href="https://gonoise-clone.netlify.app/"
             target="_blank"
-            className="border-2 border-slate-600/30 dark:lg:border-slate-300/30 px-4 py-2 rounded-[6px] text-sm dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
+            className="border-[1px] border-slate-900/30 dark:border-slate-100/30 px-4 py-2 rounded-[6px] text-sm dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white"
           >
             <i className="ri-links-line mb-1"></i> Take a tour
           </a>

@@ -7,20 +7,35 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="pt-4 lg:pt-0 min-h-screen  antialiased bg-grid-white/[0.02] flex flex-col gap-4">
-      <div className="lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  lg:p-4 rounded-[15px]">
+      <div className="text-base text-neutral-600 dark:text-neutral-400 lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  lg:p-4 rounded-[15px]">
         <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
-        What I Do
+          What I Do
         </h1>
-        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">I enjoy <span className="text-black dark:text-white font-bold">creating</span> Web products.</p>
-        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
-          I&apos;m a passionate <span className="dark:text-white text-black font-bold">MERN</span> Stack and <span className="dark:text-white text-black font-bold">Next.js</span> Developer with a dedication
-          to building clean, efficient, and user-friendly web applications.
+        <p className="">
+          Hello, my name is <span className="text-black dark:text-white font-bold">Anish Tanwar</span>. I enjoy{" "}
+          <span className="text-black dark:text-white font-bold">creating</span>{" "}
+          Web products.
+        </p>
+        <p className="my-4 ">
+          I&apos;m a passionate{" "}
+          <span className="dark:text-white text-black font-bold">MERN</span>{" "}
+          Stack and{" "}
+          <span className="dark:text-white text-black font-bold">Next.js</span>{" "}
+          Developer with a dedication to building clean, efficient, and
+          user-friendly web applications.
         </p>
 
-        <p className="mb-2 font-xl  text-neutral-600 dark:text-neutral-400">
-          I&apos;ve hands-on experience from internships at <span className="dark:text-white text-black font-bold">Primewise Consulting</span> and <span className="dark:text-white text-black font-bold">Solitaire Infosys.</span> My expertise spans both frontend and backend
-          development, allowing me to build comprehensive solutions from the
-          ground up.
+        <p className="">
+          I&apos;ve hands-on experience from internships at{" "}
+          <span className="dark:text-white text-black font-bold">
+            Primewise Consulting
+          </span>{" "}
+          and{" "}
+          <span className="dark:text-white text-black font-bold">
+            Solitaire Infosys.
+          </span>{" "}
+          My expertise spans both frontend and backend development, allowing me
+          to build comprehensive solutions from the ground up.
         </p>
       </div>
 
@@ -92,9 +107,9 @@ export default function Home() {
 
         <Link
           href={"/contact"}
-          className="text-black dark:text-white hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-200 border-2 border-slate-600/30 dark:lg:border-slate-300/30 px-4 py-2 rounded-[10px] "
+          className="text-base flex items-center justify-center text-black dark:text-white hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-200 border-[1px] border-slate-900/30 dark:border-slate-100/30 px-4 py-2 rounded-[10px] "
         >
-          Let&apos;s get in touch <i className="ri-send-plane-fill "></i>
+          Let&apos;s get in touch<i className="ri-send-plane-fill ml-1 text-lg"></i>
         </Link>
       </div>
     </main>

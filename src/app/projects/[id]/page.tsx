@@ -6,6 +6,8 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import Loading from "@/components/Loading";
+import { useTheme } from "@/components/ThemeContext";
+import ExpressDark from "@/assets/backend/express-light.svg";
 
 interface TechStackItem {
   path: string;
@@ -25,6 +27,7 @@ interface Project {
 
 const ProjectDetails = () => {
   const params = useParams();
+  const { theme } = useTheme();
   const projectId = params.id as string; // Assuming `id` is the parameter name
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
@@ -51,6 +54,13 @@ const ProjectDetails = () => {
       setLoading(false); // If no projectId, stop loading
     }
   }, [projectId]);
+
+  const getIconPath = (tech: TechStackItem) => {
+    if(tech.name === "ExpressJS"){
+      return theme === "light" ? ExpressDark : tech.path;
+    }
+    return tech.path;
+  }
 
   if (loading) {
     return (
@@ -85,9 +95,9 @@ const ProjectDetails = () => {
             <div className="flex items-center flex-wrap gap-4 mt-2">
               {project.techStack.map((tech, index) => (
                 <div key={index} className="relative group">
-                  <Image
-                    src={tech.path}
-                    alt="Technology Icon"
+                  <Image 
+                    src={getIconPath(tech)}
+                    alt={tech.name}
                     width={30}
                     height={30}
                   />

@@ -36,7 +36,7 @@ function Profile() {
           </div>
         </div>
 
-        <div className=" grid gap-2 text-[14px] text-neutral-600 dark:text-neutral-400">
+        <div className=" grid gap-2 text-[14px] text-neutral-900 md:text-neutral-600 dark:text-neutral-400">
           <div className="flex gap-2 items-center ">
             <li className="text-xl list-none">
               <i className="ri-map-pin-line"></i>
@@ -89,7 +89,7 @@ function Profile() {
         {/* Plateform Links */}
         <div className="mt-5">
           <ul className="grid gap-3">
-            <li className="flex justify-between items-center border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
+            <li className="flex justify-between items-center border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
               <div className="flex justify-center items-center gap-2">
                 <Image
                   className="w-8"
@@ -100,13 +100,13 @@ function Profile() {
                   <h2 className="text-[16px] font-semibold text-gray-800 dark:text-white">
                     Linked In
                   </h2>
-                  <p className="text-[12px] text-neutral-600 dark:text-neutral-400">
+                  <p className="text-[12px] text-neutral-900 md:text-neutral-600 dark:text-neutral-400">
                     @thisisanishtanwar
                   </p>
                 </div>
               </div>
               <a href="https://www.linkedin.com/in/thisisanishtanwar/" target="_blank">
-                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
+                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
                   <i className="ri-external-link-line"></i>
                   <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
                     LinkedIn
@@ -114,7 +114,7 @@ function Profile() {
                 </div>
               </a>
             </li>
-            <li className="flex justify-between items-center border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
+            <li className="flex justify-between items-center border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
               <div className="flex justify-center items-center gap-2">
                 <Image
                   className="w-10"
@@ -125,13 +125,13 @@ function Profile() {
                   <h2 className="text-[16px] font-semibold text-gray-800 dark:text-white">
                     Github
                   </h2>
-                  <p className="text-[12px] text-neutral-600 dark:text-neutral-400">
+                  <p className="text-[12px] text-neutral-900 md:text-neutral-600 dark:text-neutral-400">
                     @anishtanwar11
                   </p>
                 </div>
               </div>
               <a href="https://github.com/anishtanwar11" target="_blank">
-                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
+                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
                   <i className="ri-external-link-line"></i>
                   <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
                     Github
@@ -139,20 +139,20 @@ function Profile() {
                 </div>
               </a>
             </li>
-            <li className="flex justify-between items-center border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
+            <li className="flex justify-between items-center border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
               <div className="flex justify-center items-center gap-2">
                 <Image className="w-10" src={LeetCode} alt="Leet Code" />
                 <div>
                   <h2 className="text-[16px] font-semibold text-gray-800 dark:text-white">
                     LeetCode
                   </h2>
-                  <p className="text-[12px] text-neutral-600 dark:text-neutral-400">
+                  <p className="text-[12px] text-neutral-900 md:text-neutral-600 dark:text-neutral-400">
                     @anishtanwar
                   </p>
                 </div>
               </div>
               <a href="https://leetcode.com/u/anishtanwar/" target="_blank">
-                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-600/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
+                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
                   <i className="ri-external-link-line"></i>
                   <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
                     Letcode

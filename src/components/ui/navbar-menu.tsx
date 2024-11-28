@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="backdrop-blur-xl 
+      className="backdrop-blur-3xl 
       w-full relative rounded-full 
       dark:bg-black/30 dark:border-white/[0.2]  shadow-input 
       flex justify-between items-center space-x-4 px-4 md:px-8 py-4"
