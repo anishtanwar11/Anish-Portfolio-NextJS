@@ -57,8 +57,7 @@
             "mongoose",
             "nodemailer",
             "mailgen",
-            "cloudinary",
-            "mailgen"
+            "cloudinary"
         ],
         "category": "MERN",
         "liveLink": "https://cloudbooks.vercel.app/",

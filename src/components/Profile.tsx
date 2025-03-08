@@ -18,7 +18,7 @@ function Profile() {
 
   return (
     <div className="w-full justify-center  lg:pr-4">
-      <div className="lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 p-4 rounded-[15px]">
+      <div className="lg:border-[0px] bg-white dark:bg-black border-slate-600/20 dark:lg:border-slate-300/20 p-4 rounded-[15px]">
         <div className="mb-10 ">
           <div className="flex-none w-40 h-40 mx-auto ">
             <Image
@@ -51,7 +51,10 @@ function Profile() {
               anishtanvar@gmail.com
             </div>
           </a>
-          <a href="https://www.instagram.com/thisisanishtanwar/" target="_blank">
+          <a
+            href="https://www.instagram.com/thisisanishtanwar/"
+            target="_blank"
+          >
             <div className="flex gap-2 items-center hover:text-black dark:hover:text-white duration-200">
               <li className="text-xl list-none">
                 <i className="ri-instagram-line"></i>
@@ -91,11 +94,7 @@ function Profile() {
           <ul className="grid gap-3">
             <li className="flex justify-between items-center border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
               <div className="flex justify-center items-center gap-2">
-                <Image
-                  className="w-8"
-                  src={LinkedIn}
-                  alt="Leet Code"
-                />
+                <Image className="w-8" src={LinkedIn} alt="Leet Code" />
                 <div>
                   <h2 className="text-[16px] font-semibold text-gray-800 dark:text-white">
                     Linked In
@@ -105,7 +104,10 @@ function Profile() {
                   </p>
                 </div>
               </div>
-              <a href="https://www.linkedin.com/in/thisisanishtanwar/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/thisisanishtanwar/"
+                target="_blank"
+              >
                 <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
                   <i className="ri-external-link-line"></i>
                   <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">

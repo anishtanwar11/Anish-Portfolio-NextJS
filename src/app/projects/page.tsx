@@ -50,7 +50,7 @@ function ProjectDisplay() {
           {projects.map((project) => (
             <li
               key={project._id}
-              className="mb-5 bg-gray-50 dark:bg-[#141515] border dark:border-white/[0.2] border-black/[0.1] relative rounded-xl p-3 md:p-5 "
+              className="mb-5 bg-white dark:bg-black dark:border-white/[0.2] border-black/[0.1] relative rounded-xl p-3 md:p-5 "
             >
               <Link
                 href={`/projects/[id]`}
@@ -72,8 +72,7 @@ function ProjectDisplay() {
                       {project.name}
                     </h1>
                   </div>
-                  {project.packages 
-                  ? (
+                  {project.packages ? (
                     <div>
                       <p className="flex flex-wrap gap-2 text-left text-sm font-normal text-neutral-600 dark:text-neutral-400 md:text-sm md:font-normal">
                         {project.packages.slice(0, 2).map((elem, index) => (

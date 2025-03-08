@@ -4,7 +4,7 @@ import SkillIcons from "@/components/SkillIcons";
 export default function Skills() {
   return (
     <div className=" grid gap-4 mb-4">
-      <div className="flex flex-col md:flex-row lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center lg:px-4 mt-4 md:mt-0">
+      <div className="flex p-4 bg-white dark:bg-black flex-col md:flex-row lg:border-[0px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center lg:px-4 mt-4 md:mt-0">
         <div className="grid gap-3">
           <h1 className="text-gray-800 dark:text-white text-xl md:text-3xl font-semibold">
             My Skills
@@ -23,9 +23,7 @@ export default function Skills() {
           </ul>
         </div>
 
-        <div>
-          <SkillCloud />
-        </div>
+        <div>{/* <SkillCloud /> */}</div>
       </div>
 
       <div>

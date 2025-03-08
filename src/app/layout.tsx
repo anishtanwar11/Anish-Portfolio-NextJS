@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/ThemeContext"; // Adjust the path if necessary
+// import { useTheme } from "../components/ThemeContext";
 // Components
 import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
@@ -19,22 +20,38 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const { theme } = useTheme();
+  // const bgClass = theme === "dark" ? "bg-custom-bg-dark" : "bg-custom-bg-light";
+
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className}  bg-cover bg-no-repeat bg-center bg-fixed`}
+      >
         <ThemeProvider>
+          <div className="w-full h-full absolute top-10 flex justify-center">
+            <div className="bg-[#781B97] w-[1194px] h-[1194px] opacity-45 blur-3xl rounded-full"></div>
+          </div>
+          {/* Navbar */}
           <div className="relative w-full flex items-left justify-center">
             <Navbar />
           </div>
+
+          {/* Main Content */}
           <div className="w-full max-w-7xl mx-auto relative mt-24">
             <div className="flex">
+              {/* Profile Section */}
               <div className="w-1/4 hidden lg:block">
                 <Profile />
               </div>
-              <div className="right-0  w-full lg:w-3/4 px-4 lg:px-0 top-20 md:top-32 lg:top-0">
+
+              {/* Page Content */}
+              <div className="right-0 w-full lg:w-3/4 px-4 lg:px-0">
                 {children}
               </div>
             </div>
+
+            {/* Footer */}
             <div>
               <Footer />
             </div>

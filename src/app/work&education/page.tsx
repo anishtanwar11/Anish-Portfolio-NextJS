@@ -12,7 +12,7 @@ import DSC from "../../assets/institutes/DyalSinghCollege.jpg";
 
 export default function WorkAndEducation() {
   return (
-    <div className="mb-4 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center">
+    <div className="mb-4 bg-white dark:bg-black w-full lg:border-[0px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center">
       <TracingBeam className="">
         <div className="max-w-2xl mx-auto antialiased pt-4 pl-4 lg:pl-0 relative border-b-[1px] border-opacity-20 border-slate-600/20 dark:lg:border-slate-300/20 ">
           <h1 className="text-gray-800 dark:text-white text-center text-xl md:text-3xl mb-10 font-semibold ">

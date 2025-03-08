@@ -2,13 +2,21 @@
 import Image from "next/image";
 import FP1 from "@/assets/images/cover-notebook.png";
 import FP2 from "@/assets/images/noise-img.png";
+import Link from "next/link";
 
 const FeatureProject = () => {
   return (
     <div>
-      <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
+      <h1 className="text-xl md:text-3xl font-semibold text-center text-gray-800 dark:text-white">
         Featured Projects
       </h1>
+
+      <Link
+        href="/projects"
+        className="text-lg  font-semibold mb-10 text-center w-full flex items-center justify-center text-blue-500"
+      >
+        View all <i className="ri-arrow-right-s-line"></i>
+      </Link>
 
       <div className="flex flex-col md:flex-row gap-4 mb-6 ">
         <div className="md:w-1/2 overflow-hidden rounded-[8px]">
@@ -19,7 +27,7 @@ const FeatureProject = () => {
           <h1 className="flex items-center gap-x-2 text-lg font-semibold text-gray-800 dark:text-white">
             📒 Notebook (MERN Stack)
           </h1>
-          <p className="mt-2 text-base text-neutral-800 dark:text-neutral-200">
+          <p className="mt-2 mb-4 text-base text-neutral-800 dark:text-neutral-200">
             <i>
               <span className="dark:text-white text-black text-xl">&quot;</span>
               Your all-in-one digital notebook to organize ideas, collaborate,
@@ -27,11 +35,11 @@ const FeatureProject = () => {
               <span className="dark:text-white text-black text-xl">&quot;</span>
             </i>
           </p>
-          <p className="mt-2 text-base mb-5 text-neutral-600 dark:text-neutral-400">
+          {/* <p className="mt-2 text-base mb-5 text-neutral-600 dark:text-neutral-400">
             A full-featured Notebook app with a User Dashboard, empowering users
             to manage notebooks, sections, and pages with a rich text editor and
             secure authentication.
-          </p>
+          </p> */}
 
           <a
             href="https://cloudbooks.vercel.app/"
@@ -46,21 +54,23 @@ const FeatureProject = () => {
       <div className="flex flex-col-reverse md:flex-row gap-4">
         <div className="text-gray-800 dark:text-white md:w-1/2">
           <h1 className="flex items-center gap-x-2 text-lg font-semibold text-gray-800 dark:text-white">
-          🛍️ Noise Clone
+            🛍️ Noise Clone
           </h1>
-          <p className="mt-2 text-base text-neutral-800 dark:text-neutral-200">
+          <p className="mt-2 mb-4 text-base text-neutral-800 dark:text-neutral-200">
             <i>
-              <span className="dark:text-white text-black text-xl ">&quot;</span>
+              <span className="dark:text-white text-black text-xl ">
+                &quot;
+              </span>
               Experience seamless online shopping with our Noise-inspired
               e-commerce platform.
               <span className="dark:text-white text-black text-xl">&quot;</span>
             </i>
           </p>
-          <p className="mt-2 text-base mb-5 text-neutral-600 dark:text-neutral-400">
+          {/* <p className="mt-2 text-base mb-5 text-neutral-600 dark:text-neutral-400">
             Developed a Noise Clone e-commerce website featuring product
             categories, detailed product pages, search filters, and a fully
             functional shopping cart for a smooth user experience.
-          </p>
+          </p> */}
 
           <a
             href="https://gonoise-clone.netlify.app/"

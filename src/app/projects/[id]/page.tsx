@@ -56,11 +56,11 @@ const ProjectDetails = () => {
   }, [projectId]);
 
   const getIconPath = (tech: TechStackItem) => {
-    if(tech.name === "ExpressJS"){
+    if (tech.name === "ExpressJS") {
       return theme === "light" ? ExpressDark : tech.path;
     }
     return tech.path;
-  }
+  };
 
   if (loading) {
     return (
@@ -75,7 +75,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="my-4 lg:mt-0 w-full lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center p-0 md:p-8">
+    <div className="bg-white dark:bg-black my-4 lg:mt-0 w-full lg:border-[0px] border-slate-600/20 dark:lg:border-slate-300/20 rounded-xl items-center p-0 md:p-8">
       <div className="flex flex-col gap-8 w-full text-right">
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
@@ -95,7 +95,7 @@ const ProjectDetails = () => {
             <div className="flex items-center flex-wrap gap-4 mt-2">
               {project.techStack.map((tech, index) => (
                 <div key={index} className="relative group">
-                  <Image 
+                  <Image
                     src={getIconPath(tech)}
                     alt={tech.name}
                     width={30}

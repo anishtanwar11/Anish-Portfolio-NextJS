@@ -6,13 +6,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="pt-4 lg:pt-0 min-h-screen  antialiased bg-grid-white/[0.02] flex flex-col gap-4">
-      <div className="text-base text-neutral-600 dark:text-neutral-400 lg:border-[1px] border-slate-600/20 dark:lg:border-slate-300/20  lg:p-4 rounded-[15px]">
+    <main className="pt-4 lg:pt-0 min-h-screen  antialiased bg-grid-white/[0.02] flex flex-col gap-4 ">
+      <div className="text-base bg-white dark:bg-black text-neutral-600 dark:text-neutral-400 lg:border-[0px] border-slate-600/20 dark:lg:border-slate-300/20  p-4 rounded-[15px]">
         <h1 className="text-xl md:text-3xl font-semibold mb-4 text-gray-800 dark:text-white">
           What I Do
         </h1>
         <p className="">
-          Hello, my name is <span className="text-black dark:text-white font-bold">Anish Tanwar</span>. I enjoy{" "}
+          Hello, my name is{" "}
+          <span className="text-black dark:text-white font-bold">
+            Anish Tanwar
+          </span>
+          . I enjoy{" "}
           <span className="text-black dark:text-white font-bold">creating</span>{" "}
           Web products.
         </p>
@@ -25,7 +29,7 @@ export default function Home() {
           user-friendly web applications.
         </p>
 
-        <p className="">
+        {/* <p className="">
           I&apos;ve hands-on experience from internships at{" "}
           <span className="dark:text-white text-black font-bold">
             Primewise Consulting
@@ -36,57 +40,45 @@ export default function Home() {
           </span>{" "}
           My expertise spans both frontend and backend development, allowing me
           to build comprehensive solutions from the ground up.
-        </p>
+        </p> */}
       </div>
 
       <div className="flex flex-col md:flex-row gap-4 w-full">
-        <div className="flex flex-row gap-4 w-full md:w-1/2 ">
+        <div className="flex flex-row gap-4 w-full ">
           <Link
             href={"/work&education"}
-            className="w-full flex flex-col gap-5 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]"
+            className="w-full bg-white dark:bg-black flex flex-col border-[0px] border-slate-600/20 dark:border-slate-300/20 px-4 py-6 rounded-[15px]"
           >
-            <i className="ri-award-line text-black dark:text-white text-2xl"></i>
-
-            <div>
-              <p className="text-lg font-semibold text-gray-800 dark:text-white">
-                Experience
+            <div className="flex flex-col items-center justify-center gap-2">
+              <p className="text-sm font-normal dark:text-white">
+                <span className="text-5xl">8</span> Months
               </p>
-              <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
-                8 Months
+              <p className="text-sm font-semibold text-neutral-600 dark:text-neutral-400 ">
+                Work Experience
               </p>
             </div>
           </Link>
 
           <Link
             href={"/projects"}
-            className="w-full flex flex-col gap-5 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]"
+            className="w-full flex bg-white dark:bg-black flex-col gap-5 border-[0px] border-slate-600/20 dark:border-slate-300/20 px-4 py-6 rounded-[15px]"
           >
-            <i className="ri-briefcase-line text-black dark:text-white text-2xl"></i>
-            <div>
-              <p className="text-lg font-semibold text-gray-800 dark:text-white">
-                Completed
-              </p>
-              <p className="text-sm font-normal text-neutral-600 dark:text-neutral-400 max-w-sm">
-                6+ Projects
+            <div className="flex flex-col items-center justify-center gap-2">
+              <p className="text-5xl font-normal dark:text-white">6+</p>
+              <p className="text-sm font-semibold text-neutral-600 dark:text-neutral-400">
+                Completed Projects
               </p>
             </div>
           </Link>
         </div>
 
-        <div className="w-full hidden md:flex flex-col items-center justify-center gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
+        <div className="w-full hidden md:flex flex-col items-center justify-center border-[1px] border-white/50 dark:border-slate-300/20 p-4 rounded-[15px]">
           <SocialIconDock />
         </div>
       </div>
 
-      <div className="w-full flex-col items-center justify-center gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
-        <FeatureProject />
-      </div>
-
-      <div className="flex flex-col-reverse md:flex-row gap-4 w-full">
-        <div className="w-full flex flex-col gap-6 border-[0px] border-slate-600/20 dark:border-slate-300/20 rounded-[15px]">
-          <SkillCard />
-        </div>
-        <div className="w-full flex flex-col gap-6 border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
+      <div className="flex flex-col md:flex-row gap-4 w-full">
+        <div className="w-full flex flex-col gap-6 bg-white dark:bg-black border-[0px] border-slate-600/20 dark:border-slate-300/20 p-4 rounded-[15px]">
           <h1 className="text-lg text-center font-semibold text-gray-800 dark:text-white">
             LeetCode Solved Questions (DSA)
           </h1>
@@ -94,9 +86,17 @@ export default function Home() {
 
           <LeetCodeCard />
         </div>
+
+        <div className="w-full flex flex-col gap-6 border-[0px] border-slate-600/20 dark:border-slate-300/20 rounded-[15px]">
+          <SkillCard />
+        </div>
       </div>
 
-      <div className="mb-4 flex flex-col items-center justify-center lg:border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4  lg:px-8 lg:py-16 rounded-[15px]">
+      <div className="w-full bg-white dark:bg-black flex-col items-center justify-center gap-6 border-[0px] border-slate-600/20 dark:border-slate-300/20 p-[20px] rounded-[15px]">
+        <FeatureProject />
+      </div>
+
+      <div className="mb-4 flex flex-col items-center justify-center border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4  lg:px-8 lg:py-16 rounded-[15px]">
         <h1 className="mb-4 text-xl text-center md:text-3xl font-semibold text-gray-800 dark:text-white">
           Ready to take your digital presence to the next level?
         </h1>
@@ -109,7 +109,8 @@ export default function Home() {
           href={"/contact"}
           className="text-base flex items-center justify-center text-black dark:text-white hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-200 border-[1px] border-slate-900/30 dark:border-slate-100/30 px-4 py-2 rounded-[10px] "
         >
-          Let&apos;s get in touch<i className="ri-send-plane-fill ml-1 text-lg"></i>
+          Let&apos;s get in touch
+          <i className="ri-send-plane-fill ml-1 text-lg"></i>
         </Link>
       </div>
     </main>
