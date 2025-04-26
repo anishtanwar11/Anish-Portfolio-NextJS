@@ -6,6 +6,8 @@ import { useTheme } from "./ThemeContext";
 import Image from "next/image";
 import ProfileImg from "../assets/images/farewalle3.jpg";
 import LeetCode from "../assets/images/leetcode.svg";
+import Instagram from "../assets/images/Instagram-icom.png";
+import Twitter from "../assets/images/X.png";
 import Github from "../assets/images/github.svg";
 import GithubLight from "@/assets/frontend/github-light.svg";
 import LinkedIn from "@/assets/images/linkedin-original.svg";
@@ -49,25 +51,6 @@ function Profile() {
                 <i className="ri-mail-line"></i>
               </li>
               anishtanvar@gmail.com
-            </div>
-          </a>
-          <a
-            href="https://www.instagram.com/thisisanishtanwar/"
-            target="_blank"
-          >
-            <div className="flex gap-2 items-center hover:text-black dark:hover:text-white duration-200">
-              <li className="text-xl list-none">
-                <i className="ri-instagram-line"></i>
-              </li>
-              thisisanishtanwar
-            </div>
-          </a>
-          <a href="https://twitter.com/thisistanwar" target="_blank">
-            <div className="flex gap-2 items-center hover:text-black dark:hover:text-white duration-200">
-              <li className="text-xl list-none">
-                <i className="ri-twitter-line"></i>
-              </li>
-              thisistanwar
             </div>
           </a>
         </div>
@@ -158,6 +141,51 @@ function Profile() {
                   <i className="ri-external-link-line"></i>
                   <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
                     Letcode
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li className="flex justify-between items-center border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
+              <div className="flex justify-center items-center gap-2">
+                <Image className="w-10" src={Instagram} alt="Instagram" />
+                <div>
+                  <h2 className="text-[16px] font-semibold text-gray-800 dark:text-white">
+                    Instagram
+                  </h2>
+                  <p className="text-[12px] text-neutral-900 md:text-neutral-600 dark:text-neutral-400">
+                    @thisisanishtanwar
+                  </p>
+                </div>
+              </div>
+              <a
+                href="https://www.instagram.com/thisisanishtanwar/"
+                target="_blank"
+              >
+                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
+                  <i className="ri-external-link-line"></i>
+                  <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
+                    Instagram
+                  </span>
+                </div>
+              </a>
+            </li>
+            <li className="flex justify-between items-center border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded-[15px] p-2 hover:dark:bg-[rgba(40,40,40,0.70)] hover:bg-gray-100 hover:shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] duration-200">
+              <div className="flex justify-center items-center gap-2">
+                <Image className="w-10" src={Twitter} alt="Twitter" />
+                <div>
+                  <h2 className="text-[16px] font-semibold text-gray-800 dark:text-white">
+                    Twitter
+                  </h2>
+                  <p className="text-[12px] text-neutral-900 md:text-neutral-600 dark:text-neutral-400">
+                    @thisistanwar
+                  </p>
+                </div>
+              </div>
+              <a href="https://twitter.com/thisistanwar" target="_blank">
+                <div className="relative group text-gray-800 dark:text-white text-xl border-[1px] border-slate-900/20 dark:border-slate-300/20 rounded w-8 h-8 flex text-center justify-center ">
+                  <i className="ri-external-link-line"></i>
+                  <span className="mb-3 absolute bottom-full left-1/2 -translate-x-1/2 dark:bg-white dark:text-black bg-black text-white text-center text-xs font-semibold rounded-[7px] py-2 px-3 hidden group-hover:block transition-opacity duration-300">
+                    Twitter
                   </span>
                 </div>
               </a>

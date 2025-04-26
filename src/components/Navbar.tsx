@@ -55,12 +55,20 @@ function Navbar({ className }: { className?: string }) {
               </div>
             )}
           </div>
-          <Link href={"/"}>
+          <Link href={"/"} className="">
             <Image
               src={theme === "dark" ? LogoDark : LogoLight}
               alt={"logo image"}
               className="w-36  md:w-40"
             />
+
+            {/* <Image
+              src="/video/signlogo.gif"
+              width={0}
+              height={0}
+              alt="Logo"
+              className="w-40 h-full object-cover"
+            /> */}
           </Link>
         </div>
 
@@ -107,7 +115,7 @@ function Navbar({ className }: { className?: string }) {
             </Link>
           </div>
 
-          <button
+          {/* <button
             onClick={handleThemeSwitch}
             className="md:flex mr-3 md:mr-0 text-black dark:text-white text-xl h-6 md:items-center md:border-l-[2px] md:pl-3 border-slate-900/20 dark:lg:border-slate-100/50 hidden"
           >
@@ -130,7 +138,7 @@ function Navbar({ className }: { className?: string }) {
                 ></path>
               </svg>
             )}
-          </button>
+          </button> */}
 
           <div
             className="md:hidden block cursor-pointer text-xl dark:text-white text-black"
@@ -173,7 +181,7 @@ function Navbar({ className }: { className?: string }) {
               <i className="ri-chat-3-line text-xl"></i> Contact Me
             </Link>
           </li>
-          <li>
+          {/* <li>
             <button onClick={handleThemeSwitch} className="">
               {theme === "dark" ? (
                 <>
@@ -200,7 +208,7 @@ function Navbar({ className }: { className?: string }) {
                 </div>
               )}
             </button>
-          </li>
+          </li> */}
         </ul>
       )}
 

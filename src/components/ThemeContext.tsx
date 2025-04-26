@@ -20,7 +20,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<string>("light");
+  const [theme, setTheme] = useState<string>("dark");
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -37,12 +37,12 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
       localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
     }
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+    setTheme((prevTheme) => (prevTheme === "dark" ? "dark" : "dark"));
   };
 
   return (
