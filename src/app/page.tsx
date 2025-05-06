@@ -28,19 +28,6 @@ export default function Home() {
           Developer with a dedication to building clean, efficient, and
           user-friendly web applications.
         </p>
-
-        {/* <p className="">
-          I&apos;ve hands-on experience from internships at{" "}
-          <span className="dark:text-white text-black font-bold">
-            Primewise Consulting
-          </span>{" "}
-          and{" "}
-          <span className="dark:text-white text-black font-bold">
-            Solitaire Infosys.
-          </span>{" "}
-          My expertise spans both frontend and backend development, allowing me
-          to build comprehensive solutions from the ground up.
-        </p> */}
       </div>
 
       <div className="flex flex-col md:flex-row gap-4 w-full">
@@ -107,7 +94,7 @@ export default function Home() {
 
         <Link
           href={"/contact"}
-          className="text-base flex items-center justify-center text-black dark:text-white hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black duration-200 border-[1px] border-slate-900/30 dark:border-slate-100/30 px-4 py-2 rounded-[10px] "
+          className="text-sm flex items-center justify-center text-black  hover:bg-black hover:text-white hover:dark:bg-white hover:dark:text-black dark:text-gray-200 bg-gray-500/50 dark:border-slate-100/30 px-5 py-2 rounded-[10px] duration-300 ease-in-out "
         >
           Let&apos;s get in touch
           <i className="ri-send-plane-fill ml-1 text-lg"></i>

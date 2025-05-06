@@ -7,16 +7,18 @@ import Image from "next/image";
 
 import PrimeWise from "../../assets/certificates/Primewise.jpg";
 import Solitare from "../../assets/certificates/Solitare.jpg";
+import PrimewiseLogo from "@/assets/institutes/primewise_consulting_logo.webp";
+import SolitaireLogo from "@/assets/institutes/solitaire_infosys_inc_logo.webp";
 import Kuk from "../../assets/institutes/kuk_logo-e1668590054813.png";
 import DSC from "../../assets/institutes/DyalSinghCollege.jpg";
 
 export default function WorkAndEducation() {
   return (
-    <div className="mb-4 bg-white dark:bg-black w-full lg:border-[0px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center">
+    <div className="mb-4 bg-white dark:bg-black px-2 w-full lg:border-[0px] border-slate-600/20 dark:lg:border-slate-300/20  rounded-xl items-center">
       <TracingBeam className="">
         <div className="max-w-2xl mx-auto antialiased pt-4 pl-4 lg:pl-0 relative border-b-[1px] border-opacity-20 border-slate-600/20 dark:lg:border-slate-300/20 ">
           <h1 className="text-gray-800 dark:text-white text-center text-xl md:text-3xl mb-10 font-semibold ">
-            <i className="ri-briefcase-line"></i> Work Exprience
+            Work Exprience
           </h1>
           {workContent.map((item, index) => (
             <div key={`content-${index}`} className="mb-10">
@@ -103,7 +105,7 @@ export default function WorkAndEducation() {
 
         <div className="max-w-2xl mx-auto antialiased pt-4 pl-4 lg:pl-0 mt-4 relative">
           <h1 className="text-gray-800 dark:text-white flex items-center justify-center gap-2 text-center text-xl md:text-3xl font-semibold mb-10 ">
-            <svg
+            {/* <svg
               xmlns="http://www.w3.org/2000/svg"
               width="25"
               height="25"
@@ -111,7 +113,7 @@ export default function WorkAndEducation() {
               viewBox="0 0 256 256"
             >
               <path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path>
-            </svg>
+            </svg> */}
             Education
           </h1>
           {educationContent.map((item, index) => (
@@ -210,8 +212,7 @@ const workContent = [
     ),
     badge: "Web Development Intern",
     certificateImage: PrimeWise,
-    logoImage:
-      "https://media.licdn.com/dms/image/v2/D560BAQFV-sRoAjY2-Q/company-logo_200_200/company-logo_200_200/0/1694249171005/primewise_consulting_logo?e=1740009600&v=beta&t=zpWnlfh0Wk9YhW8E6_zmWGYQAIUqLZxXTiLCdYLzfck",
+    logoImage: PrimewiseLogo,
   },
   {
     title: "Solitaire Infosys Inc",
@@ -243,8 +244,7 @@ const workContent = [
     ),
     badge: "Frontend Development Intern",
     certificateImage: Solitare,
-    logoImage:
-      "https://media.licdn.com/dms/image/v2/C4D0BAQE8xg9YXHSNXA/company-logo_200_200/company-logo_200_200/0/1630560859402/solitaire_infosys_inc_logo?e=1740009600&v=beta&t=EZHFipxv4c8gUG4vrglKDViyD3BSkSFHOCNPoxVnAIw",
+    logoImage: SolitaireLogo,
   },
 ];
 

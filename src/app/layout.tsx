@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${inter.className}  bg-cover bg-no-repeat bg-center bg-fixed`}
       >
         <ThemeProvider>
-          <div className="w-full h-full absolute top-10 flex justify-center">
+          <div className="w-full h-full fixed top-10 flex justify-center">
             <div className="bg-[#781B97] w-[1194px] h-[1194px] opacity-45 blur-3xl rounded-full"></div>
           </div>
           {/* Navbar */}

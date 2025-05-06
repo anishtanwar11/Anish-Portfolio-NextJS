@@ -19,6 +19,7 @@ import ExpressJS from "../assets/backend/express.svg";
 import ExpressJSLight from "@/assets/backend/express-light.svg";
 import RestApi from "../assets/backend/restapi-icon.svg";
 import MongoDB from "../assets/backend/mongo.svg";
+import MySql from "../assets/backend/icons8-mysql.svg";
 
 import Github from "../assets/tools/github.svg";
 import GithubLight from "@/assets/frontend/github-light.svg";
@@ -29,6 +30,7 @@ import Vercel from "../assets/tools/vercel.svg";
 import VercelLight from "../assets/tools/vercel-light.svg";
 import Postman from "../assets/tools/postman.svg";
 import Figma from "../assets/tools/figma.svg";
+import Photoshop from "../assets/tools/icons8-photoshop.svg";
 
 export default function SkillIcons() {
   const { theme } = useTheme();
@@ -153,6 +155,12 @@ export default function SkillIcons() {
                     MongoDB
                   </p>
                 </li>
+                <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={MySql} alt="" className="w-12" />
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    MySQL
+                  </p>
+                </li>
               </ul>
             </div>
           </div>
@@ -218,6 +226,13 @@ export default function SkillIcons() {
                   <Image src={Figma} alt="" className="w-12" />
                   <p className="text-sm text-gray-700 dark:text-gray-300">
                     Figma
+                  </p>
+                </li>
+
+                <li className="flex-col gap-y-2 w-24 h-24 lg:w-32 lg:h-32 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-[rgba(40,40,40,0.70)] bg-gray-100 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] flex items-center justify-center">
+                  <Image src={Photoshop} alt="" className="w-12" />
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Photoshop
                   </p>
                 </li>
               </ul>
