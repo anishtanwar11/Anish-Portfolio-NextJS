@@ -83,7 +83,7 @@ export default function Home() {
         <FeatureProject />
       </div>
 
-      <div className="mb-4 flex flex-col items-center justify-center border-[1px] border-slate-600/20 dark:border-slate-300/20 p-4  lg:px-8 lg:py-16 rounded-[15px]">
+      <div className="bg-[rgba(40,40,40,0.70)] shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] mb-4 flex flex-col items-center justify-center border-[0px] border-slate-600/20 dark:border-slate-300/20 p-4  lg:px-8 lg:py-16 rounded-[15px]">
         <h1 className="mb-4 text-xl text-center md:text-3xl font-semibold text-gray-800 dark:text-white">
           Ready to take your digital presence to the next level?
         </h1>

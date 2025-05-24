@@ -2,9 +2,9 @@ import SocialIconDock from "./SocialIconsDock";
 
 function Footer() {
   return (
-    <div className="w-full lg:px-0">
-      <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" />
-      <div className=" flex-col py-8  rounded-xl w-full mb-8 md:my-6  flex items-center justify-center">
+    <div className="w-full lg:px-0 px-4">
+      {/* <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-4 h-[1px] w-full" /> */}
+      <div className="flex-col px-8 pt-16 pb-8 bg-black rounded-xl w-full mb-4 lg:mb-8 md:my-6  flex items-center justify-center">
         <p className="text-center text-2xl sm:text-5xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 ">
           Anish Tanwar
         </p>
@@ -20,7 +20,7 @@ function Footer() {
             </p>
           </div>
           <div className="text-gray-500 text-xs font-semibold">
-            <p>Last updated by Anish on March 01, 2025, 12:49 PM </p>
+            <p>Last updated by Anish on May 24, 2025, 20:54 PM </p>
           </div>
         </div>
       </div>
